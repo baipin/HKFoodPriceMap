@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:14:07.784Z",
+  "generatedAt": "2026-10-25T20:29:30.543Z",
   "status": "ok",
   "districts": {
     "central-western": {
@@ -8,12 +8,91 @@
       "en": "Central and Western",
       "lat": 22.283,
       "lng": 114.155,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 60,
+      "medianPerPerson": 58,
+      "priceSamples": 6,
+      "postCount": 6,
+      "updatedAt": "2026-10-25T20:27:04.341Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "士多啤梨甜品",
+          "restaurant": "士多啤梨甜品",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均（茶餐廳）",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "估計人均（快餐）",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠園冰室",
+          "restaurant": "翠園冰室",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均（冰室/茶餐廳）",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳洲牛奶公司",
+          "restaurant": "澳洲牛奶公司",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均（茶餐廳/奶公司）",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "蓮香居",
+          "restaurant": "蓮香居",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均（粥粉麵）",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "wan-chai": {
       "id": "wan-chai",
@@ -21,12 +100,143 @@
       "en": "Wan Chai",
       "lat": 22.277,
       "lng": 114.173,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 80,
+      "medianPerPerson": 73,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:27:12.506Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大利茶餐廳",
+          "restaurant": "大利茶餐廳",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線（灣仔）",
+          "restaurant": "譚仔三哥米線（灣仔）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（灣仔）",
+          "restaurant": "翠華餐廳（灣仔）",
+          "prices": [
+            95
+          ],
+          "perPerson": 95,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（灣仔）",
+          "restaurant": "大家樂（灣仔）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "太興（灣仔）",
+          "restaurant": "太興（灣仔）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "新記車仔麵（灣仔）",
+          "restaurant": "新記車仔麵（灣仔）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金記燒味飯店",
+          "restaurant": "金記燒味飯店",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "蓮香樓",
+          "restaurant": "蓮香樓",
+          "prices": [
+            120
+          ],
+          "perPerson": 120,
+          "excerpt": "估計人均（較高）",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香（灣仔）",
+          "restaurant": "稻香（灣仔）",
+          "prices": [
+            110
+          ],
+          "perPerson": 110,
+          "excerpt": "估計人均（較高）",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麵王（灣仔）",
+          "restaurant": "麵王（灣仔）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "eastern": {
       "id": "eastern",
@@ -34,12 +244,143 @@
       "en": "Eastern",
       "lat": 22.279,
       "lng": 114.225,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 67,
+      "medianPerPerson": 60,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:27:20.249Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "檀香茶餐廳",
+          "restaurant": "檀香茶餐廳",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "生記粥品",
+          "restaurant": "生記粥品",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔雲南米線",
+          "restaurant": "譚仔雲南米線",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麥當勞（港島東）",
+          "restaurant": "麥當勞（港島東）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "肯德基（港島東）",
+          "restaurant": "肯德基（港島東）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "利苑酒家（港島東）",
+          "restaurant": "利苑酒家（港島東）",
+          "prices": [
+            120
+          ],
+          "perPerson": 120,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（港島東）",
+          "restaurant": "大家樂（港島東）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（港島東）",
+          "restaurant": "翠華餐廳（港島東）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "許留山（港島東）",
+          "restaurant": "許留山（港島東）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "southern": {
       "id": "southern",
@@ -47,12 +388,156 @@
       "en": "Southern",
       "lat": 22.245,
       "lng": 114.185,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 68,
+      "medianPerPerson": 70,
+      "priceSamples": 11,
+      "postCount": 11,
+      "updatedAt": "2026-10-25T20:27:26.114Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大利茶餐廳",
+          "restaurant": "大利茶餐廳",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金記冰室",
+          "restaurant": "金記冰室",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "森記粉麵",
+          "restaurant": "森記粉麵",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "快餐小廚",
+          "restaurant": "快餐小廚",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添發燒味飯堂",
+          "restaurant": "添發燒味飯堂",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "聯發燒臘飯店",
+          "restaurant": "聯發燒臘飯店",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線",
+          "restaurant": "譚仔三哥米線",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麥當勞（南區店）",
+          "restaurant": "麥當勞（南區店）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香",
+          "restaurant": "稻香",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "yau-tsim-mong": {
       "id": "yau-tsim-mong",
@@ -60,12 +545,195 @@
       "en": "Yau Tsim Mong",
       "lat": 22.31,
       "lng": 114.17,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 64,
+      "medianPerPerson": 65,
+      "priceSamples": 14,
+      "postCount": 14,
+      "updatedAt": "2026-10-25T20:27:33.559Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金都冰室",
+          "restaurant": "金都冰室",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "許留山",
+          "restaurant": "許留山",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳門茶餐廳",
+          "restaurant": "澳門茶餐廳",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "人人樂快餐",
+          "restaurant": "人人樂快餐",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "一品香快餐",
+          "restaurant": "一品香快餐",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家食堂",
+          "restaurant": "大家食堂",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "源記甜品",
+          "restaurant": "源記甜品",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添好运",
+          "restaurant": "添好运",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線",
+          "restaurant": "譚仔三哥米線",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "肥姐小食店",
+          "restaurant": "肥姐小食店",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西苑快餐",
+          "restaurant": "西苑快餐",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "sham-shui-po": {
       "id": "sham-shui-po",
@@ -73,12 +741,143 @@
       "en": "Sham Shui Po",
       "lat": 22.33,
       "lng": 114.16,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 76,
+      "medianPerPerson": 78,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:27:41.496Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鴨脷洲街兩餸飯",
+          "restaurant": "鴨脷洲街兩餸飯",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大利兩餸飯",
+          "restaurant": "大利兩餸飯",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鴻圖兩餸飯",
+          "restaurant": "鴻圖兩餸飯",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "必勝客兩餸飯",
+          "restaurant": "必勝客兩餸飯",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍門冰室",
+          "restaurant": "龍門冰室",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金滿燒味快餐",
+          "restaurant": "金滿燒味快餐",
+          "prices": [
+            90
+          ],
+          "perPerson": 90,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添發茶餐廳",
+          "restaurant": "添發茶餐廳",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍城冰室",
+          "restaurant": "龍城冰室",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "太子茶餐廳",
+          "restaurant": "太子茶餐廳",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "快樂小食",
+          "restaurant": "快樂小食",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "kowloon-city": {
       "id": "kowloon-city",
@@ -86,12 +885,130 @@
       "en": "Kowloon City",
       "lat": 22.328,
       "lng": 114.19,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 66,
+      "medianPerPerson": 65,
+      "priceSamples": 9,
+      "postCount": 9,
+      "updatedAt": "2026-10-25T20:27:47.584Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔雲南米線（大角咀分店）",
+          "restaurant": "譚仔雲南米線（大角咀分店）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍鳳快餐",
+          "restaurant": "龍鳳快餐",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活（九龍城）",
+          "restaurant": "大快活（九龍城）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（九龍城）",
+          "restaurant": "大家樂（九龍城）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麥當勞（九龍城）",
+          "restaurant": "麥當勞（九龍城）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（何文田）",
+          "restaurant": "大家樂（何文田）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "新記車仔麵",
+          "restaurant": "新記車仔麵",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（九龍城）",
+          "restaurant": "翠華餐廳（九龍城）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳門茶餐廳",
+          "restaurant": "澳門茶餐廳",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "wong-tai-sin": {
       "id": "wong-tai-sin",
@@ -99,12 +1016,104 @@
       "en": "Wong Tai Sin",
       "lat": 22.34,
       "lng": 114.195,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 64,
+      "medianPerPerson": 65,
+      "priceSamples": 7,
+      "postCount": 7,
+      "updatedAt": "2026-10-25T20:27:53.400Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "太興",
+          "restaurant": "太興",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香",
+          "restaurant": "稻香",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "惠康（快餐/熟食檔）",
+          "restaurant": "惠康（快餐/熟食檔）",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "興記粉麵（黃大仙）",
+          "restaurant": "興記粉麵（黃大仙）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "kwun-tong": {
       "id": "kwun-tong",
@@ -112,12 +1121,169 @@
       "en": "Kwun Tong",
       "lat": 22.313,
       "lng": 114.225,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 66,
+      "medianPerPerson": 65,
+      "priceSamples": 12,
+      "postCount": 12,
+      "updatedAt": "2026-10-25T20:28:00.246Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香集團（觀塘）",
+          "restaurant": "稻香集團（觀塘）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線（觀塘）",
+          "restaurant": "譚仔三哥米線（觀塘）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（觀塘）",
+          "restaurant": "大家樂（觀塘）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（觀塘）",
+          "restaurant": "翠華餐廳（觀塘）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "真功夫（觀塘）",
+          "restaurant": "真功夫（觀塘）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "俏江南（觀塘）",
+          "restaurant": "俏江南（觀塘）",
+          "prices": [
+            90
+          ],
+          "perPerson": 90,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "便當小店（觀塘）",
+          "restaurant": "便當小店（觀塘）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "祥興（觀塘兩餸飯）",
+          "restaurant": "祥興（觀塘兩餸飯）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "源記（觀塘兩餸飯）",
+          "restaurant": "源記（觀塘兩餸飯）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "陳記燒味（觀塘）",
+          "restaurant": "陳記燒味（觀塘）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "瑞記（觀塘茶餐廳）",
+          "restaurant": "瑞記（觀塘茶餐廳）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金滿屋快餐（觀塘）",
+          "restaurant": "金滿屋快餐（觀塘）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "kwai-tsing": {
       "id": "kwai-tsing",
@@ -125,12 +1291,208 @@
       "en": "Kwai Tsing",
       "lat": 22.356,
       "lng": 114.129,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 75,
+      "medianPerPerson": 75,
+      "priceSamples": 15,
+      "postCount": 15,
+      "updatedAt": "2026-10-25T20:28:08.312Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（葵芳）",
+          "restaurant": "翠華餐廳（葵芳）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（葵芳）",
+          "restaurant": "大家樂（葵芳）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "許留山（葵芳）",
+          "restaurant": "許留山（葵芳）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線（葵芳）",
+          "restaurant": "譚仔三哥米線（葵芳）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "蜀川辣麵（葵青）",
+          "restaurant": "蜀川辣麵（葵青）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（葵涌）",
+          "restaurant": "大家樂（葵涌）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（葵涌）",
+          "restaurant": "翠華餐廳（葵涌）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添好運（葵芳）",
+          "restaurant": "添好運（葵芳）",
+          "prices": [
+            120
+          ],
+          "perPerson": 120,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "廟街炸雞（葵涌）",
+          "restaurant": "廟街炸雞（葵涌）",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "永發燒味（葵涌）",
+          "restaurant": "永發燒味（葵涌）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "美心快餐（葵芳）",
+          "restaurant": "美心快餐（葵芳）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "快樂雞煲（葵芳）",
+          "restaurant": "快樂雞煲（葵芳）",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍城冰室（葵芳）",
+          "restaurant": "龍城冰室（葵芳）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "聯記燒腊（葵涌）",
+          "restaurant": "聯記燒腊（葵涌）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金記燒味（葵青）",
+          "restaurant": "金記燒味（葵青）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "tsuen-wan": {
       "id": "tsuen-wan",
@@ -138,12 +1500,208 @@
       "en": "Tsuen Wan",
       "lat": 22.37,
       "lng": 114.11,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 69,
+      "medianPerPerson": 68,
+      "priceSamples": 15,
+      "postCount": 15,
+      "updatedAt": "2026-10-25T20:28:19.452Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添發生煎荃灣店",
+          "restaurant": "添發生煎荃灣店",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "荃灣快餐（眾安街一帶快餐店）",
+          "restaurant": "荃灣快餐（眾安街一帶快餐店）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "祥記茶餐廳（荃灣）",
+          "restaurant": "祥記茶餐廳（荃灣）",
+          "prices": [
+            68
+          ],
+          "perPerson": 68,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活（荃灣）",
+          "restaurant": "大快活（荃灣）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（荃灣）",
+          "restaurant": "大家樂（荃灣）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "許留山（荃灣）",
+          "restaurant": "許留山（荃灣）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線（荃灣）",
+          "restaurant": "譚仔三哥米線（荃灣）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金記腸粉王（荃灣）",
+          "restaurant": "金記腸粉王（荃灣）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳門茶餐廳（荃灣）",
+          "restaurant": "澳門茶餐廳（荃灣）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳洲牛奶公司（荃灣）",
+          "restaurant": "澳洲牛奶公司（荃灣）",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍門冰室（荃灣）",
+          "restaurant": "龍門冰室（荃灣）",
+          "prices": [
+            72
+          ],
+          "perPerson": 72,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "榮華雞飯（荃灣）",
+          "restaurant": "榮華雞飯（荃灣）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "元氣壽司（荃灣）",
+          "restaurant": "元氣壽司（荃灣）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香（荃灣）",
+          "restaurant": "稻香（荃灣）",
+          "prices": [
+            90
+          ],
+          "perPerson": 90,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（荃灣）",
+          "restaurant": "翠華餐廳（荃灣）",
+          "prices": [
+            78
+          ],
+          "perPerson": 78,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "tuen-mun": {
       "id": "tuen-mun",
@@ -151,12 +1709,143 @@
       "en": "Tuen Mun",
       "lat": 22.391,
       "lng": 113.977,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 57,
+      "medianPerPerson": 55,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:28:43.844Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳門茶餐廳（屯門）",
+          "restaurant": "澳門茶餐廳（屯門）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "利苑（屯門）",
+          "restaurant": "利苑（屯門）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均（一般點心/菜）",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "香港仔粉麵（屯門）",
+          "restaurant": "香港仔粉麵（屯門）",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "榮記粥品（屯門）",
+          "restaurant": "榮記粥品（屯門）",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麥文記（屯門）",
+          "restaurant": "麥文記（屯門）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均（兩餸飯）",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "恒香兩餸飯",
+          "restaurant": "恒香兩餸飯",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均（兩餸飯）",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "祥興兩餸飯",
+          "restaurant": "祥興兩餸飯",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均（兩餸飯）",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "yuen-long": {
       "id": "yuen-long",
@@ -164,12 +1853,156 @@
       "en": "Yuen Long",
       "lat": 22.445,
       "lng": 114.022,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 65,
+      "medianPerPerson": 65,
+      "priceSamples": 11,
+      "postCount": 11,
+      "updatedAt": "2026-10-25T20:28:57.276Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大利士多",
+          "restaurant": "大利士多",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西貢美食（元朗）",
+          "restaurant": "西貢美食（元朗）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔雲南米線（元朗）",
+          "restaurant": "譚仔雲南米線（元朗）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "真一點心（元朗）",
+          "restaurant": "真一點心（元朗）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "永輝冰室（元朗）",
+          "restaurant": "永輝冰室（元朗）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家發茶餐廳（元朗）",
+          "restaurant": "大家發茶餐廳（元朗）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍華冰室（元朗）",
+          "restaurant": "龍華冰室（元朗）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "金記燒臘（元朗）",
+          "restaurant": "金記燒臘（元朗）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳洲牛奶公司（元朗）",
+          "restaurant": "澳洲牛奶公司（元朗）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "north": {
       "id": "north",
@@ -177,12 +2010,143 @@
       "en": "North",
       "lat": 22.495,
       "lng": 114.138,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 68,
+      "medianPerPerson": 68,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:29:04.574Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "祥記粉麵（上水）",
+          "restaurant": "祥記粉麵（上水）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "聯興快餐",
+          "restaurant": "聯興快餐",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活（上水）",
+          "restaurant": "大快活（上水）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳（上水）",
+          "restaurant": "翠華餐廳（上水）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "許留山（上水）",
+          "restaurant": "許留山（上水）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂（粉嶺）",
+          "restaurant": "大家樂（粉嶺）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "龍城麵家（粉嶺）",
+          "restaurant": "龍城麵家（粉嶺）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "華嫂冰室（粉嶺）",
+          "restaurant": "華嫂冰室（粉嶺）",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豐茂燒味（上水）",
+          "restaurant": "豐茂燒味（上水）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "通宵廚房（上水/粉嶺一帶）",
+          "restaurant": "通宵廚房（上水/粉嶺一帶）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "tai-po": {
       "id": "tai-po",
@@ -190,12 +2154,143 @@
       "en": "Tai Po",
       "lat": 22.45,
       "lng": 114.164,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 79,
+      "medianPerPerson": 73,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:29:10.271Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳洲牛奶公司",
+          "restaurant": "澳洲牛奶公司",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香",
+          "restaurant": "稻香",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添好運",
+          "restaurant": "添好運",
+          "prices": [
+            105
+          ],
+          "perPerson": 105,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "陽光餐廳",
+          "restaurant": "陽光餐廳",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家姐茶餐廳",
+          "restaurant": "大家姐茶餐廳",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠園小廚",
+          "restaurant": "翠園小廚",
+          "prices": [
+            90
+          ],
+          "perPerson": 90,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "快利小食",
+          "restaurant": "快利小食",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "富臨皇宮",
+          "restaurant": "富臨皇宮",
+          "prices": [
+            130
+          ],
+          "perPerson": 130,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "sha-tin": {
       "id": "sha-tin",
@@ -203,12 +2298,143 @@
       "en": "Sha Tin",
       "lat": 22.387,
       "lng": 114.195,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 66,
+      "medianPerPerson": 58,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:29:17.298Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活",
+          "restaurant": "大快活",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大快活（沙田）",
+          "restaurant": "大快活（沙田）",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大家樂",
+          "restaurant": "大家樂",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "翠華餐廳",
+          "restaurant": "翠華餐廳",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔雲南米線",
+          "restaurant": "譚仔雲南米線",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "譚仔三哥米線",
+          "restaurant": "譚仔三哥米線",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "稻香（沙田）",
+          "restaurant": "稻香（沙田）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "添好运（沙田）",
+          "restaurant": "添好运（沙田）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "澳門豆撈（沙田）",
+          "restaurant": "澳門豆撈（沙田）",
+          "prices": [
+            110
+          ],
+          "perPerson": 110,
+          "excerpt": "偏贵，估计人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "人人樂（沙田）",
+          "restaurant": "人人樂（沙田）",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "sai-kung": {
       "id": "sai-kung",
@@ -216,12 +2442,143 @@
       "en": "Sai Kung",
       "lat": 22.38,
       "lng": 114.27,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 71,
+      "medianPerPerson": 70,
+      "priceSamples": 10,
+      "postCount": 10,
+      "updatedAt": "2026-10-25T20:29:24.484Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "人人樂快餐（西貢）",
+          "restaurant": "人人樂快餐（西貢）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "麥文記車仔麵（西貢）",
+          "restaurant": "麥文記車仔麵（西貢）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "茶居士（西貢）",
+          "restaurant": "茶居士（西貢）",
+          "prices": [
+            75
+          ],
+          "perPerson": 75,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "勝香園冰室（西貢）",
+          "restaurant": "勝香園冰室（西貢）",
+          "prices": [
+            80
+          ],
+          "perPerson": 80,
+          "excerpt": "估計人均",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "越南粉·小食（西貢）",
+          "restaurant": "越南粉·小食（西貢）",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "新寶味燒味（西貢）",
+          "restaurant": "新寶味燒味（西貢）",
+          "prices": [
+            78
+          ],
+          "perPerson": 78,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "富記海鮮粥粉麵（西貢）",
+          "restaurant": "富記海鮮粥粉麵（西貢）",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "萬記粉麵（西貢）",
+          "restaurant": "萬記粉麵（西貢）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "榮記食館（西貢）",
+          "restaurant": "榮記食館（西貢）",
+          "prices": [
+            85
+          ],
+          "perPerson": 85,
+          "excerpt": "估計人均",
+          "category": "餐廳",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "福記粉麵（西貢）",
+          "restaurant": "福記粉麵（西貢）",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "估計人均",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:26:57.699Z"
+        }
+      ]
     },
     "islands": {
       "id": "islands",
