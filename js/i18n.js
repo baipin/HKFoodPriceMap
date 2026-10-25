@@ -47,6 +47,10 @@
       themeToDark: "切換至黑夜模式",
       themeToLight: "切換至白天模式",
       langLabel: "語言",
+      otherProjects: "其他項目",
+      donate: "捐贈我們",
+      reportIssue: "報告問題",
+      wcagAlt: "符合萬維網聯盟有關無障礙網頁設計指引中2A級別的要求",
       localeTag: "zh-HK",
     },
     "zh-Hans": {
@@ -90,6 +94,10 @@
       themeToDark: "切换至夜间模式",
       themeToLight: "切换至白天模式",
       langLabel: "语言",
+      otherProjects: "其他项目",
+      donate: "捐赠我们",
+      reportIssue: "报告问题",
+      wcagAlt: "符合万维网联盟有关无障碍网页设计指引中2A级别的要求",
       localeTag: "zh-CN",
     },
     en: {
@@ -133,6 +141,10 @@
       themeToDark: "Switch to dark mode",
       themeToLight: "Switch to light mode",
       langLabel: "Language",
+      otherProjects: "Other projects",
+      donate: "Donate",
+      reportIssue: "Report an issue",
+      wcagAlt: "Conforms to W3C WCAG 2.2 Level AA",
       localeTag: "en-GB",
     },
   };
@@ -209,6 +221,9 @@
     });
     document.querySelectorAll("[data-i18n-aria]").forEach(function (node) {
       node.setAttribute("aria-label", t(node.getAttribute("data-i18n-aria")));
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (node) {
+      node.setAttribute("alt", t(node.getAttribute("data-i18n-alt")));
     });
     document.querySelectorAll("[data-i18n-title]").forEach(function (node) {
       node.setAttribute("title", t(node.getAttribute("data-i18n-title")));

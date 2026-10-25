@@ -323,6 +323,10 @@ h1, h2, h3, p { margin: 0; }
   gap: 4px;
 }
 .footer__crawl { font-variant-numeric: tabular-nums; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 16px; }
+.footer__links a { color: var(--primary); text-decoration: none; }
+.footer__links a:hover { text-decoration: underline; }
+.footer__wcag { display: block; height: auto; }
 
 @media (max-width: 960px) {
   .layout {
