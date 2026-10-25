@@ -328,6 +328,8 @@
     ]);
   }
 
+  // One restaurant / source card. Shows the source label, category, price and the
+  // page it came from (a link when one was given, plain text when the AI gave none).
   function renderPost(p) {
     var href = safeHttpUrl(p.url);
     var titleText = p.title || p.restaurant || t("untitled");
@@ -335,7 +337,7 @@
       ? el("a", { href: href, target: "_blank", rel: "noopener noreferrer nofollow", text: titleText })
       : document.createTextNode(titleText);
     var meta = [el("span", { class: "badge", text: p.source || t("sourceDefault") })];
-    if (p.restaurant) meta.push(el("span", { text: p.restaurant }));
+    if (p.category) meta.push(el("span", { class: "chip chip--info", text: p.category }));
     if (p.perPerson != null) meta.push(el("span", { text: t("perPerson", { v: p.perPerson }) }));
     var when = fmtTime(p.fetchedAt);
     if (when) meta.push(el("span", { text: when }));

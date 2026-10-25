@@ -26,7 +26,7 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 
 The model's answer is not trusted:
 
-- each entry must have an `http(s)` source URL; entries without one are dropped;
+- each entry needs a restaurant name and a per-person price that can be read as a number (text such as "HK$65" or a range such as "60-80" is accepted). A `http(s)` source URL is kept when given; entries without one are shown as "AI search";
 - the price must be between HK$20 and HK$2,000;
 - names and titles are length-limited and stripped of control characters;
 - at most 15 entries are kept per district, with duplicate URLs removed.
@@ -82,7 +82,7 @@ python -m http.server 8000    # then open http://localhost:8000
 
 模型的回答不被完全信任：
 
-- 每則結果必須有 `http(s)` 來源網址，沒有的會被丟棄；
+- 每則結果需要餐廳名稱，以及可讀成數字的人均價格（接受「HK$65」或「60-80」這類文字和範圍）。有 `http(s)` 來源網址時會保留；沒有的會顯示為「AI 搜尋」；
 - 價格必須介於 HK$20 至 HK$2,000 之間；
 - 名稱和標題有長度限制，並去除控制字元；
 - 每區最多保留 15 則結果，重複網址會被去除。

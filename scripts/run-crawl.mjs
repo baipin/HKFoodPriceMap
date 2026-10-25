@@ -33,6 +33,8 @@ for (const d of DISTRICTS) {
   db = applyCrawlResult(db, d.id, { posts: result.posts }, new Date());
   if (result.posts.length) updated++;
   console.log(`${d.id}: ${result.found} restaurant(s) with a sourced price`);
+  // Diagnostics: shows why a district came back empty (HTTP status, reply size, parse result, drop reasons).
+  if (result.diagnostics) console.log("  diag: " + JSON.stringify(result.diagnostics));
 }
 
 ledger = recordRun(
