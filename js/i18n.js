@@ -7,7 +7,7 @@
 
   var STRINGS = {
     "zh-Hant": {
-      appTitle: "香港食物價格地圖",
+      appTitle: "香港價格地圖",
       appSubtitle: "按行政區",
       loading: "加載中…",
       neverUpdated: "尚未抓取數據",
@@ -60,7 +60,7 @@
       localeTag: "zh-HK",
     },
     "zh-Hans": {
-      appTitle: "香港食物价格地图",
+      appTitle: "香港价格地图",
       appSubtitle: "按行政区",
       loading: "加载中…",
       neverUpdated: "尚未抓取数据",
@@ -113,7 +113,7 @@
       localeTag: "zh-CN",
     },
     en: {
-      appTitle: "Hong Kong Food Price Map",
+      appTitle: "Hong Kong Price Map",
       appSubtitle: "By district",
       loading: "Loading…",
       neverUpdated: "No data yet",
