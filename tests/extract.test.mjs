@@ -1,20 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import {
-  sourceFor,
-  extractPrices,
-  extractRestaurant,
-  buildPostFromRecord,
-  districtStats,
-  mergePosts,
-} from "../lib/extract.mjs";
-
-test("sourceFor only accepts Facebook hosts", () => {
-  assert.equal(sourceFor("https://www.facebook.com/x/posts/1"), "Facebook");
-  assert.equal(sourceFor("https://www.xiaohongshu.com/explore/abc"), null);
-  assert.equal(sourceFor("https://evil.example.com/facebook.com"), null);
-  assert.equal(sourceFor("not a url"), null);
-});
+import { extractPrices, extractRestaurant, districtStats, mergePosts, MIN_PRICE, MAX_PRICE } from "../lib/extract.mjs";
 
 test("extractPrices finds per-person prices and rejects noise", () => {
   assert.deepEqual(extractPrices("人均 $128 很好吃"), [128]);
@@ -23,30 +9,12 @@ test("extractPrices finds per-person prices and rejects noise", () => {
   assert.deepEqual(extractPrices("港币230/位"), [230]);
   assert.deepEqual(extractPrices("人均 5 元"), []); // below MIN_PRICE
   assert.deepEqual(extractPrices("人均 99999"), []); // too many digits
+  assert.ok(MIN_PRICE < MAX_PRICE);
 });
 
-test("extractRestaurant prefers 【】 and title head", () => {
+test("extractRestaurant prefers 【】 and the title head", () => {
   assert.equal(extractRestaurant("", "今日去咗【翠華餐廳】食早餐"), "翠華餐廳");
   assert.equal(extractRestaurant("大排档 | 中环美食", ""), "大排档");
-});
-
-test("buildPostFromRecord needs a Facebook URL and a price", () => {
-  assert.equal(buildPostFromRecord({ url: "https://example.com/x", content: "人均 $100" }, "t"), null);
-  assert.equal(buildPostFromRecord({ url: "https://www.facebook.com/p/1", content: "login" }, "t"), null);
-});
-
-test("buildPostFromRecord produces a structured record", () => {
-  const post = buildPostFromRecord(
-    {
-      url: "https://www.facebook.com/shopA/posts/1",
-      content: "【海皇粥店】好正，地址：中环 人均 $65",
-    },
-    "2026-10-26T00:00:00.000Z"
-  );
-  assert.equal(post.source, "Facebook");
-  assert.equal(post.restaurant, "海皇粥店");
-  assert.deepEqual(post.prices, [65]);
-  assert.equal(post.perPerson, 65);
 });
 
 test("districtStats uses means and medians, ignoring null prices", () => {

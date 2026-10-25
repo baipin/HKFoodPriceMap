@@ -1,16 +1,16 @@
 // Driver used by GitHub Actions (.github/workflows/crawl.yml).
-//   1. read data/seeds.json (Facebook post URLs per district) and the credit ledger
-//   2. call /api/crawl once per URL (synchronous Bright Data scrape, 4 at a time)
-//   3. turn the records into posts, grouped by the district that owns the URL
-//   4. merge into data/districts.json and record the spend in data/usage.json
+// No social media is crawled directly. For each district:
+//   1. run 3 Google Custom Search queries (through the Vercel proxy /api/search)
+//   2. ask Pollinations to extract restaurant names and per-person prices from the results
+//   3. merge the validated posts into data/districts.json and record usage in data/usage.json
 //
 // Env: CRAWL_URL (e.g. https://hkfoodpricemap.vercel.app), CRON_SECRET
-import { DISTRICTS_FILE, USAGE_FILE, SEEDS_FILE, applyCrawlResult, emptyDb, readJson, writeJson } from "../lib/store.mjs";
+import { DISTRICTS_FILE, USAGE_FILE, applyCrawlResult, emptyDb, readJson, writeJson } from "../lib/store.mjs";
 import { normalizeLedger, recordRun, runBudget, PER_RUN_CAP } from "../lib/quota.mjs";
-import { parseSeeds, normalizeUrl } from "../lib/crawl.mjs";
-import { buildPostFromRecord } from "../lib/extract.mjs";
-import { classifyUrl, creditCost } from "../lib/facebook-kind.mjs";
 import { DISTRICTS } from "../lib/districts.mjs";
+import { QUERIES_PER_DISTRICT } from "../lib/search.mjs";
+import { runDistrict } from "../lib/pipeline.mjs";
+import { extractForDistrict } from "../lib/llm.mjs";
 
 const baseUrl = process.env.CRAWL_URL;
 const secret = process.env.CRON_SECRET;
@@ -19,126 +19,60 @@ if (!baseUrl || !secret) {
   process.exit(1);
 }
 
-const CONCURRENCY = 4;
-
-async function scrape(url) {
-  const endpoint = new URL("/api/crawl", baseUrl);
-  const res = await fetch(endpoint, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${secret}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ url }),
-  });
-  let json = {};
-  try { json = await res.json(); } catch { /* non-JSON error page */ }
-  if (res.status === 401 || res.status === 400) {
-    console.error(`HTTP ${res.status}: ${json.error || "rejected"}. Check CRON_SECRET / CRAWL_URL / seeds.json.`);
-    process.exit(1);
-  }
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${json.error || "error"}`);
-  return json; // { status: "ok" | "timeout", records?, credits }
-}
-
-// Run fn over items with a fixed number of workers.
-async function pool(items, limit, fn) {
-  let next = 0;
-  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
-    while (next < items.length) {
-      const i = next++;
-      await fn(items[i], i);
-    }
-  });
-  await Promise.all(workers);
-}
-
 const startedAt = new Date();
-const seeds = parseSeeds(await readJson(SEEDS_FILE, {}));
 let ledger = normalizeLedger(await readJson(USAGE_FILE, null), startedAt);
 const runCap = runBudget(ledger, startedAt);
 console.log(`Month ${ledger.month}: used ${ledger.used}, run budget ${runCap} (cap ${PER_RUN_CAP})`);
 
-if (!seeds.urls.length) {
-  console.log("data/seeds.json has no Facebook URLs. Nothing to crawl.");
-  process.exit(0);
-}
-if (runCap <= 0) {
-  console.log("Monthly credit budget reached (reserve kept). Skipping crawl.");
+if (runCap < QUERIES_PER_DISTRICT) {
+  console.log("Not enough search budget for a run. Skipping.");
   process.exit(0);
 }
 
-// Pick URLs in order while their total credit cost fits the run budget.
-// A post costs 1 credit; a group or page costs LIMIT_PER_INPUT credits.
-const urls = [];
-let planned = 0;
-for (const url of seeds.urls) {
-  const kind = classifyUrl(url);
-  if (!kind) {
-    console.log(`skipped (not a post, group or page URL): ${url}`);
-    continue;
+// Search through the Vercel proxy (holds the Google key).
+async function search(query) {
+  const url = new URL("/api/search", baseUrl);
+  url.searchParams.set("q", query);
+  const res = await fetch(url, { headers: { Authorization: `Bearer ${secret}` } });
+  let json = {};
+  try { json = await res.json(); } catch { /* non-JSON */ }
+  if (res.status === 401 || res.status === 400) {
+    console.error(`HTTP ${res.status}: ${json.error || "rejected"}. Check CRON_SECRET / CRAWL_URL.`);
+    process.exit(1);
   }
-  const cost = creditCost(kind);
-  if (planned + cost > runCap) break;
-  planned += cost;
-  urls.push(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status}: ${json.error || "error"}`);
+  return json.items || [];
 }
-console.log(`Scraping ${urls.length} URL(s) for ~${planned} credit(s), ${CONCURRENCY} at a time ...`);
 
-const fetchedAt = new Date().toISOString();
-const postsByDistrict = new Map(); // districtId -> posts
-let spent = 0;
-let ok = 0;
-let timeouts = 0;
-let failures = 0;
-
-await pool(urls, CONCURRENCY, async (url) => {
-  const districtId = seeds.urlToDistrict.get(normalizeUrl(url));
-  try {
-    const result = await scrape(url);
-    spent += Number(result.credits) || 1;
-    if (result.status !== "ok") {
-      timeouts++;
-      console.log(`timeout (not finished within 1 min): ${url}`);
-      return;
-    }
-    ok++;
-    const posts = (result.records || [])
-      .map((rec) => buildPostFromRecord(rec, fetchedAt))
-      .filter(Boolean);
-    if (!postsByDistrict.has(districtId)) postsByDistrict.set(districtId, []);
-    postsByDistrict.get(districtId).push(...posts);
-    console.log(`ok: ${url} -> ${posts.length} post(s) with prices`);
-  } catch (err) {
-    // Unknown spend on failure: count one credit to stay on the safe side.
-    spent += 1;
-    failures++;
-    console.error(`failed: ${url}: ${err.message}`);
-  }
-});
-
+// Pollinations is called directly from the runner (no key needed).
 let db = await readJson(DISTRICTS_FILE, emptyDb(startedAt));
-let districtsUpdated = 0;
-// Only districts that have seed URLs are refreshed; others keep their data.
-const seededDistricts = new Set(seeds.urlToDistrict.values());
+let spent = 0;
+let updated = 0;
+const fetchedAt = new Date().toISOString();
+
 for (const d of DISTRICTS) {
-  if (!seededDistricts.has(d.id)) continue;
-  const posts = postsByDistrict.get(d.id) || [];
-  db = applyCrawlResult(db, d.id, { posts }, new Date());
-  if (posts.length) districtsUpdated++;
+  if (spent + QUERIES_PER_DISTRICT > runCap) {
+    console.log(`Budget reached before ${d.id}; remaining districts keep their data.`);
+    break;
+  }
+  spent += QUERIES_PER_DISTRICT; // charged per query attempted, to stay on the safe side
+  const result = await runDistrict(d, {
+    search,
+    extract: extractForDistrict,
+    fetchedAt,
+  });
+  for (const e of result.errors) console.error(`${d.id}: ${e}`);
+  db = applyCrawlResult(db, d.id, { posts: result.posts }, new Date());
+  if (result.posts.length) updated++;
+  console.log(`${d.id}: ${result.items} result(s), ${result.posts.length} post(s) with prices`);
 }
 
 ledger = recordRun(
   ledger,
-  {
-    startedAt: startedAt.toISOString(),
-    credits: spent,
-    districts: districtsUpdated,
-    note: `ok=${ok} timeout=${timeouts} failed=${failures}`,
-  },
+  { startedAt: startedAt.toISOString(), credits: spent, districts: updated, note: "google-cse+pollinations" },
   startedAt
 );
 
 await writeJson(DISTRICTS_FILE, db);
 await writeJson(USAGE_FILE, ledger);
-console.log(
-  `Run finished: ${ok} ok, ${timeouts} timeout, ${failures} failed; ${districtsUpdated} district(s) with posts; ` +
-  `${spent} credits. Month total ${ledger.used}/${ledger.limit}.`
-);
+console.log(`Run finished: ${updated} district(s) with posts, ${spent} search credits. Month total ${ledger.used}/${ledger.limit}.`);
