@@ -18,7 +18,7 @@ const wanChai = getDistrict("wan-chai");
 const reply = (content, status = 200) => async () =>
   new Response(JSON.stringify({ choices: [{ message: { content } }] }), { status });
 
-test("the search model is the only data source, sent to the chat endpoint with a JSON response format", async () => {
+test("Pollinations GPT-5.4 Nano is the only data source, sent to the chat endpoint with a JSON response format", async () => {
   let seen;
   const fetchImpl = async (url, init) => {
     seen = { url: String(url), body: JSON.parse(init.body) };
@@ -27,7 +27,7 @@ test("the search model is the only data source, sent to the chat endpoint with a
   await collectForDistrict("灣仔", { fetchImpl });
   assert.equal(seen.url, "https://gen.pollinations.ai/v1/chat/completions");
   assert.equal(seen.body.model, POLLINATIONS_MODEL);
-  assert.equal(POLLINATIONS_MODEL, "google/gemini-2.5-flash-lite:search");
+  assert.equal(POLLINATIONS_MODEL, "openai/gpt-5.4-nano");
   assert.deepEqual(seen.body.response_format, { type: "json_object" });
   assert.match(seen.body.messages[1].content, /District: 灣仔/);
 });
@@ -81,7 +81,7 @@ test("validateCollection accepts text prices and keeps entries without a URL", (
   assert.equal(accepted[0].price, 65);
   assert.equal(accepted[0].item.source, "HK01");
   assert.equal(accepted[1].item.link, "");
-  assert.equal(accepted[1].item.source, "AI 搜尋");
+  assert.equal(accepted[1].item.source, "AI 知識（未核實）");
   assert.equal(accepted[2].item.link, "");
   assert.equal(dropped.noName, 1);
   assert.equal(dropped.badPrice, 1);

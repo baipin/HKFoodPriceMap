@@ -1,6 +1,6 @@
 // Driver used by GitHub Actions (.github/workflows/crawl.yml).
 // Pollinations is the only data source. For each district it makes one call to a
-// search-enabled Pollinations model, validates the answer, and merges the posts
+// Pollinations (GPT-5.4 Nano) model, validates the answer, and merges the posts
 // into data/districts.json. Usage is recorded in data/usage.json (one request per district).
 //
 // Env: POLLINATIONS_API_KEY (optional, sent as a Bearer token when set)
