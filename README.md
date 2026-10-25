@@ -2,6 +2,18 @@
 
 **Live site / 網站：** https://hkfoodpricemap.vercel.app/
 
+> **Where do the API keys go? / API 密鑰填在哪裡？**
+>
+> | Name / 名稱 | Where / 填寫位置 | Value / 內容 |
+> |---|---|---|
+> | `BRIGHTDATA_API_KEY` | Vercel → Project → Settings → Environment Variables | Bright Data API key / Bright Data 密鑰 |
+> | `BRIGHTDATA_ZONE_SERP` | Vercel → Environment Variables | SERP zone name / SERP zone 名稱 |
+> | `CRON_SECRET` | Vercel **and** GitHub → Settings → Secrets → Actions (same value) | Random string, e.g. `openssl rand -hex 32` / 隨機字串 |
+> | `CRAWL_URL` | GitHub → Settings → Secrets → Actions | `https://hkfoodpricemap.vercel.app` |
+> | `POLLINATIONS_API_KEY` (optional / 可選) | GitHub → Secrets → Actions | Pollinations key, if you have one / Pollinations 密鑰 |
+>
+> Nothing is stored in the code. After adding Vercel variables, redeploy. / 密鑰不寫入程式碼；在 Vercel 新增變數後需要重新部署。
+
 ---
 
 ## English

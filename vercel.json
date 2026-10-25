@@ -9,7 +9,7 @@
     }
   ],
   "functions": {
-    "api/crawl.js": {
+    "api/search.js": {
       "maxDuration": 60
     }
   }
