@@ -44,7 +44,7 @@ async function search(query) {
   return json.items || [];
 }
 
-// Pollinations is called directly from the runner (no key needed).
+// Pollinations is called directly from the runner (optional POLLINATIONS_API_KEY).
 let db = await readJson(DISTRICTS_FILE, emptyDb(startedAt));
 let spent = 0;
 let updated = 0;

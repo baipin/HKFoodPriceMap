@@ -28,6 +28,7 @@ jobs:
         env:
           CRAWL_URL: ${{ secrets.CRAWL_URL }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
         run: node scripts/run-crawl.mjs
 
       - name: Commit data if changed

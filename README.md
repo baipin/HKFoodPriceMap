@@ -11,7 +11,7 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 The data is **not** scraped from social media directly. A weekly job does three things for each district:
 
 1. Runs three web searches through the **Bright Data SERP API** (for example 兩餸飯, 茶餐廳, and 食評 with 人均 / HK$). Results can come from any site, including social media search results. Only the title and snippet are used. Pages are never fetched.
-2. Sends the results to **Pollinations** (a public AI text service, no key needed), which returns the restaurant name and per-person price for each result that states one. The model refers to results by index, so it cannot invent links, and each price must be between HK$20 and HK$2,000.
+2. Sends the results to **Pollinations** (`POST https://gen.pollinations.ai/v1/chat/completions`, model `openai/gpt-5.4-nano`), which returns the restaurant name and per-person price for each result that states one. The model refers to results by index, so it cannot invent links, and each price must be between HK$20 and HK$2,000.
 3. Merges the validated posts into `data/districts.json`, and records credit use in `data/usage.json`.
 
 ### Project layout
@@ -40,7 +40,7 @@ The data is **not** scraped from social media directly. A weekly job does three 
    - `CRON_SECRET`: the same value as in Vercel
 4. Run the "Crawl food prices" workflow once manually to check it.
 
-Pollinations needs no key. If it ever needs one, add it to the workflow as a secret.
+The Pollinations key is optional. If you have one, add it to Vercel or GitHub as `POLLINATIONS_API_KEY`; the crawler sends it as a Bearer token.
 
 ### Credits and limits
 
@@ -72,7 +72,7 @@ python -m http.server 8000    # then open http://localhost:8000
 數據**不是**直接從社交媒體爬取的。每週一的工作會為每個地區執行三個步驟：
 
 1. 透過 **Bright Data SERP API** 執行三次網頁搜尋（例如「兩餸飯」、「茶餐廳」，以及「食評 人均 HK$」）。搜尋結果可來自任何網站，包括社交媒體的搜尋結果。只使用標題和摘要，不會抓取網頁內容。
-2. 把搜尋結果交給 **Pollinations**（公開的 AI 文字服務，無需密鑰），由它為每則註明人均價格的結果提取餐廳名稱和人均價。模型以結果編號來引用，因此無法虛構網址；價格必須介於 HK$20 至 HK$2,000 之間。
+2. 把搜尋結果交給 **Pollinations**（`POST https://gen.pollinations.ai/v1/chat/completions`，模型 `openai/gpt-5.4-nano`），由它為每則註明人均價格的結果提取餐廳名稱和人均價。模型以結果編號來引用，因此無法虛構網址；價格必須介於 HK$20 至 HK$2,000 之間。
 3. 把通過驗證的帖文合併到 `data/districts.json`，並把額度消耗記錄在 `data/usage.json`。
 
 ### 專案結構
@@ -101,7 +101,7 @@ python -m http.server 8000    # then open http://localhost:8000
    - `CRON_SECRET`：與 Vercel 中的值相同
 4. 手動執行一次 “Crawl food prices” 工作流程以確認運作。
 
-Pollinations 無需密鑰。如果日後需要，請把密鑰加入工作流程的 secret。
+Pollinations 密鑰為可選項。如有密鑰，請在 Vercel 或 GitHub 中新增 `POLLINATIONS_API_KEY`；爬蟲會以 Bearer token 發送。
 
 ### 額度與限制
 

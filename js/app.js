@@ -89,11 +89,59 @@
   function setTheme(theme, persist) {
     document.documentElement.setAttribute("data-theme", theme);
     if (persist) I18N.writeStored(I18N.THEME_KEY, theme);
-    var btn = document.getElementById("theme-toggle");
-    var label = t(theme === "dark" ? "themeToLight" : "themeToDark");
-    btn.setAttribute("aria-label", label);
-    btn.setAttribute("title", label);
-    if (state.map) setTiles(theme === "dark");
+    var dark = theme === "dark";
+    var label = t(dark ? "themeToLight" : "themeToDark");
+    // Desktop icon button (app bar)
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+      btn.setAttribute("aria-label", label);
+      btn.setAttribute("title", label);
+    });
+    // Drawer switch row (phones)
+    document.querySelectorAll("[data-theme-toggle-row]").forEach(function (row) {
+      row.setAttribute("aria-checked", dark ? "true" : "false");
+    });
+    if (state.map) setTiles(dark);
+  }
+
+  /* ---------- Navigation drawer (phones) ---------- */
+  var lastFocus = null;
+
+  function drawerOpen() {
+    var d = document.getElementById("drawer");
+    return d && d.classList.contains("is-open");
+  }
+
+  function openDrawer() {
+    var d = document.getElementById("drawer");
+    lastFocus = document.activeElement;
+    d.classList.add("is-open");
+    d.setAttribute("aria-hidden", "false");
+    document.getElementById("scrim").classList.add("is-open");
+    document.getElementById("menu-toggle").setAttribute("aria-expanded", "true");
+    var first = d.querySelector(".drawer__head button");
+    if (first) first.focus();
+  }
+
+  function closeDrawer() {
+    var d = document.getElementById("drawer");
+    if (!d.classList.contains("is-open")) return;
+    d.classList.remove("is-open");
+    d.setAttribute("aria-hidden", "true");
+    document.getElementById("scrim").classList.remove("is-open");
+    document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  // Keep keyboard focus inside the open drawer (modal behaviour).
+  function trapFocus(e) {
+    if (e.key !== "Tab" || !drawerOpen()) return;
+    var items = Array.prototype.slice.call(
+      document.querySelectorAll("#drawer button, #drawer [tabindex]")
+    );
+    if (!items.length) return;
+    var first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   }
 
   // OpenStreetMap tiles for both themes (no API key needed). Dark mode is done
@@ -361,9 +409,34 @@
         I18N.setLang(btn.getAttribute("data-lang-btn"));
       });
     });
-    document.getElementById("theme-toggle").addEventListener("click", function () {
-      setTheme(isDark() ? "light" : "dark", true);
+    // Theme: desktop icon button and drawer switch row
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
+      btn.addEventListener("click", function () { setTheme(isDark() ? "light" : "dark", true); });
     });
+    document.querySelectorAll("[data-theme-toggle-row]").forEach(function (row) {
+      row.addEventListener("click", function () { setTheme(isDark() ? "light" : "dark", true); });
+      row.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setTheme(isDark() ? "light" : "dark", true);
+        }
+      });
+    });
+
+    // Drawer (phones)
+    document.getElementById("menu-toggle").addEventListener("click", openDrawer);
+    document.getElementById("drawer-close").addEventListener("click", closeDrawer);
+    document.getElementById("scrim").addEventListener("click", closeDrawer);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeDrawer();
+      trapFocus(e);
+    });
+    // Choosing a language inside the drawer keeps it open so the change is visible;
+    // leaving the phone breakpoint closes it.
+    window.matchMedia("(min-width: 600px)").addEventListener("change", function (m) {
+      if (m.matches) closeDrawer();
+    });
+
     document.addEventListener("hkfm:langchange", function () {
       document.title = t("appTitle") + " · " + "Hong Kong Food Price Map";
       rerenderAll();
