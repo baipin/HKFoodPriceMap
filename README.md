@@ -11,7 +11,7 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 ### How the data is collected
 
 - Facebook only. Xiaohongshu (小红书) is not covered.
-- `data/seeds.json` lists the Facebook page or post URLs for each district. The crawler only reads these URLs. It does not search by keyword.
+- `data/seeds.json` lists Facebook **post** URLs for each district (the default dataset is "posts by post URL"). The crawler only reads these URLs. It does not search by keyword.
 - The crawler triggers one Bright Data collection job per run, waits for it to finish, downloads the records, and matches each record to a district by its URL.
 - A record is kept only if its text mentions a per-person price between HK$20 and HK$2,000.
 - Restaurant names are a best-effort guess from 【】brackets or the start of the post.
@@ -67,12 +67,12 @@ python -m http.server 8000    # then open http://localhost:8000
 
 ## 繁體中文
 
-按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。定時爬蟲使用 **Bright Data Facebook Scraper API**（帖文數據集，按帖文網址收集），抓取 `data/seeds.json` 中列出的 Facebook 主頁及帖文，從帖文內容提取人均價格，寫入 `data/districts.json`。
+按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。定時爬蟲使用 **Bright Data Facebook Scraper API**（帖文數據集，按帖文網址收集），抓取 `data/seeds.json` 中列出的 Facebook 帖文網址，從帖文內容提取人均價格，寫入 `data/districts.json`。
 
 ### 數據收集方式
 
 - 只支援 Facebook。小紅書不在範圍內。
-- `data/seeds.json` 列出每區的 Facebook 主頁或帖文網址，爬蟲只讀取這些網址，不會按關鍵字搜尋。
+- `data/seeds.json` 列出每區的 Facebook **帖文**網址（預設數據集為「按帖文網址收集」）。爬蟲只讀取這些網址，不會按關鍵字搜尋。
 - 每次運行，爬蟲建立一個 Bright Data 收集工作，等待完成後下載記錄，並按網址把每筆記錄歸入對應地區。
 - 只有內容提及 HK$20 至 HK$2,000 人均價的記錄會被保留。
 - 餐廳名稱是盡力而為的推測，取自【】括號或帖文開頭。

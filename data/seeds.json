@@ -1,5 +1,5 @@
 {
-  "_comment": "Facebook page or post URLs per district (district id -> list). Only facebook.com URLs are used. Each URL costs 1 Bright Data credit per run.",
+  "_comment": "Facebook POST URLs per district (district id -> list), e.g. https://www.facebook.com/<page>/posts/<id>. The default dataset (gd_lyclm1571iy3mv57zw) is 'posts by post URL'; page URLs need a different dataset. Each URL costs about 1 credit per run.",
   "central-western": [],
   "wan-chai": [],
   "eastern": [],
