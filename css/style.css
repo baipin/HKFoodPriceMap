@@ -150,23 +150,18 @@ h1, h2, h3, p { margin: 0; }
 
 #map { height: 560px; width: 100%; }
 
-/* Legend */
+/* Legend sits below the map (not over it) so it never hides districts. */
 .legend {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  z-index: 500;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 10px 12px;
-  background: var(--surface);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--divider);
   color: var(--on-surface);
-  border-radius: 8px;
-  box-shadow: var(--elev-2);
   font-size: 12px;
 }
-.legend__item { display: flex; align-items: center; gap: 8px; }
+.legend__item { display: flex; align-items: center; gap: 6px; }
 .legend__item i {
   display: inline-block;
   width: 12px;
@@ -219,21 +214,31 @@ h1, h2, h3, p { margin: 0; }
 .district-list .price { font-weight: 500; font-variant-numeric: tabular-nums; }
 .district-list .price.none { color: var(--on-surface-2); font-weight: 400; font-size: 12px; }
 
-/* Map markers */
+/* Dark map: invert the OSM tiles and tone them down */
+.map-dark .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.95); }
+.map-dark .leaflet-container { background: #1b1d21; }
+
+/* Map markers: centered on the district point, two lines (name / price) */
 .price-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: var(--surface);
   border: 3px solid var(--c, #bdbdbd);
   color: var(--marker-text);
-  border-radius: 999px;
+  border-radius: 14px;
   padding: 2px 8px;
-  font-size: 12px;
-  font-weight: 500;
+  line-height: 1.25;
   white-space: nowrap;
   box-shadow: var(--elev-2);
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+.price-marker .pm-name { font-size: 11px; color: var(--on-surface-2); }
+.price-marker .pm-price { font-size: 13px; font-weight: 500; font-variant-numeric: tabular-nums; }
 .price-marker.is-active { background: var(--c, #bdbdbd); color: #111; }
+.price-marker.is-active .pm-name { color: #111; }
+.leaflet-container { font-family: inherit; }
 
 /* Detail */
 .detail__placeholder { color: var(--on-surface-2); }

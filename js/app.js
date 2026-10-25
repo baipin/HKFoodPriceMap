@@ -9,8 +9,6 @@
 
   var DATA_URL = "data/districts.json";
   var TILE_LIGHT = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-  var TILE_DARK = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
-  var TILE_LIGHT_CARTO = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
   var I18N = window.HKFM_I18N;
   var t = I18N.t;
 
@@ -98,21 +96,36 @@
     if (state.map) setTiles(theme === "dark");
   }
 
+  // OpenStreetMap tiles for both themes (no API key needed). Dark mode is done
+  // with a CSS filter on the tile pane, so no third-party key-based basemap is used.
   function setTiles(dark) {
     if (!state.map) return;
-    if (state.tiles) state.map.removeLayer(state.tiles);
-    state.tiles = L.tileLayer(dark ? TILE_DARK : TILE_LIGHT_CARTO, {
-      maxZoom: 18,
-      subdomains: "abcd",
-      attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
-    }).addTo(state.map);
+    if (!state.tiles) {
+      state.tiles = L.tileLayer(TILE_LIGHT, {
+        maxZoom: 18,
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(state.map);
+    }
+    state.map.getContainer().classList.toggle("map-dark", !!dark);
   }
 
   /* ---------- Map ---------- */
+  // Bounds that cover all of Hong Kong incl. Islands and North.
+  var HK_BOUNDS = [[22.13, 113.80], [22.58, 114.47]];
+
   function initMap() {
-    var map = L.map("map", { zoomControl: true, scrollWheelZoom: false }).setView([22.36, 114.16], 11);
+    var map = L.map("map", {
+      zoomControl: true,
+      scrollWheelZoom: false,
+      minZoom: 10,
+      maxZoom: 15,
+    });
     state.map = map;
+    map.fitBounds(HK_BOUNDS, { padding: [16, 16] });
     setTiles(isDark());
+    window.addEventListener("resize", function () { map.invalidateSize(); });
+    // The container may still be laying out when Leaflet first measures it.
+    setTimeout(function () { map.invalidateSize(); }, 300);
 
     districtList().forEach(function (d) {
       var marker = L.marker([d.lat, d.lng], {
@@ -126,16 +139,24 @@
     });
   }
 
-  // Pill-shaped marker: colored border by price tier; filled when selected.
+  // Two-line pill: district name (small) over price (bold); colored by price tier,
+  // filled when selected. Escaped because names come from translations only,
+  // but the price is numeric anyway.
+  function escapeHtml(s) {
+    return String(s).replace(/[<>&"']/g, function (ch) {
+      return { "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&#39;" }[ch];
+    });
+  }
+
   function makeIcon(d, active) {
     var c = tier(d.avgPerPerson).color;
-    var label = d.avgPerPerson == null ? "—" : fmtPrice(d.avgPerPerson);
-    var text = (I18N.districtName(d.id) + " " + label).replace(/[<>&"']/g, "");
+    var price = d.avgPerPerson == null ? "—" : fmtPrice(d.avgPerPerson);
     return L.divIcon({
       className: "",
       html:
         '<div class="price-marker' + (active ? " is-active" : "") + '" style="--c:' + c + '">' +
-        text + "</div>",
+        '<span class="pm-name">' + escapeHtml(I18N.districtName(d.id)) + "</span>" +
+        '<span class="pm-price">' + escapeHtml(price) + "</span></div>",
       iconSize: null,
     });
   }

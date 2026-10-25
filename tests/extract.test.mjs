@@ -2,10 +2,9 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   sourceFor,
-  htmlToText,
   extractPrices,
   extractRestaurant,
-  buildPost,
+  buildPostFromSearch,
   districtStats,
   mergePosts,
 } from "../lib/extract.mjs";
@@ -22,20 +21,9 @@ test("extractPrices finds per-person prices and rejects noise", () => {
   assert.deepEqual(extractPrices("人均 $128 很好吃"), [128]);
   assert.deepEqual(extractPrices("人均HK$88，推荐"), [88]);
   assert.deepEqual(extractPrices("HK$160 per person"), [160]);
-  assert.deepEqual(extractPrices("港币230/位"), [230]); // '/位' counts as per person
+  assert.deepEqual(extractPrices("港币230/位"), [230]);
   assert.deepEqual(extractPrices("人均 5 元"), []); // below MIN_PRICE
-  assert.deepEqual(extractPrices("人均 99999"), []); // above MAX_PRICE / too many digits
-});
-
-test("htmlToText strips tags, scripts and decodes entities", () => {
-  const html = `<html><head><title>Tim &amp; Co | 中环</title>
-    <meta property="og:description" content="人均 $100"></head>
-    <body><script>var x=1</script><p>好吃&nbsp;极了</p></body></html>`;
-  const r = htmlToText(html);
-  assert.equal(r.title, "Tim & Co | 中环");
-  assert.equal(r.description, "人均 $100");
-  assert.ok(r.text.includes("好吃 极了"));
-  assert.ok(!r.text.includes("var x"));
+  assert.deepEqual(extractPrices("人均 99999"), []); // too many digits
 });
 
 test("extractRestaurant prefers 【】 and title head", () => {
@@ -43,18 +31,22 @@ test("extractRestaurant prefers 【】 and title head", () => {
   assert.equal(extractRestaurant("大排档 | 中环美食", ""), "大排档");
 });
 
-test("buildPost returns null for non-social or empty pages", () => {
-  assert.equal(buildPost({ url: "https://example.com/x", html: "<p>人均 $100</p>" }), null);
+test("buildPostFromSearch needs an allowed source and a price", () => {
   assert.equal(
-    buildPost({ url: "https://www.facebook.com/p/1", html: "<title>login</title>", fetchedAt: "t" }),
+    buildPostFromSearch({ url: "https://example.com/x", title: "人均 $100", snippet: "", fetchedAt: "t" }),
+    null
+  );
+  assert.equal(
+    buildPostFromSearch({ url: "https://www.facebook.com/p/1", title: "login", snippet: "", fetchedAt: "t" }),
     null
   );
 });
 
-test("buildPost produces a structured record", () => {
-  const post = buildPost({
+test("buildPostFromSearch produces a structured record", () => {
+  const post = buildPostFromSearch({
     url: "https://www.xiaohongshu.com/explore/1",
-    html: `<title>【海皇粥店】人均$65</title><body>地址：中环 人均 $65 好正</body>`,
+    title: "【海皇粥店】中環 - 小红书",
+    snippet: "地址：中环 人均 $65 好正",
     fetchedAt: "2026-10-26T00:00:00.000Z",
   });
   assert.equal(post.source, "小红书");

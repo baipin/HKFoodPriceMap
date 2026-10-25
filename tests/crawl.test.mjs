@@ -1,34 +1,37 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { crawlDistrict, MAX_PAGES_PER_DISTRICT } from "../lib/crawl.mjs";
+import { crawlDistrict, queriesFor, CREDITS_PER_DISTRICT } from "../lib/crawl.mjs";
 import { Meter } from "../lib/quota.mjs";
 import { getDistrict } from "../lib/districts.mjs";
 import { emptyDb, applyCrawlResult } from "../lib/store.mjs";
 import handler from "../api/crawl.js";
 
-const cfg = { apiKey: "k", unlockerZone: "u", serpZone: "s" };
+const cfg = { apiKey: "k", serpZone: "s" };
 
-// Fake Bright Data: SERP returns 12 social links, unlocker returns a priced post.
+// Fake Bright Data SERP: every query returns one priced Xiaohongshu result,
+// one priced Facebook result and one irrelevant domain.
 function fakeFetch(calls) {
   return async (url, init) => {
-    calls.push({ url, body: JSON.parse(init.body) });
     const body = JSON.parse(init.body);
-    if (body.zone === "s") {
-      const organic = [];
-      for (let i = 0; i < 6; i++) {
-        organic.push({ title: "t" + i, link: `https://www.xiaohongshu.com/explore/${body.url.length}-${i}`, description: "" });
-      }
-      organic.push({ title: "spam", link: "https://example.com/x", description: "" });
-      return new Response(JSON.stringify({ organic }), { status: 200 });
-    }
-    return new Response(
-      `<title>【測試餐廳】</title><body>人均 $90 好食</body>`,
-      { status: 200 }
-    );
+    calls.push(body);
+    const organic = [
+      { title: "【測試餐廳】- 小红书", link: "https://www.xiaohongshu.com/explore/1", description: "人均 $90 好食" },
+      { title: "FB 食評 - Facebook", link: "https://www.facebook.com/p/9", description: "人均 HK$120" },
+      { title: "spam", link: "https://example.com/x", description: "人均 $10" },
+    ];
+    return new Response(JSON.stringify({ organic }), { status: 200 });
   };
 }
 
-test("crawlDistrict spends credits only through the meter and filters domains", async () => {
+test("queries are SERP-only, no page fetch, 4 credits per district", () => {
+  assert.equal(CREDITS_PER_DISTRICT, 4);
+  const qs = queriesFor(getDistrict("wan-chai"));
+  assert.equal(qs.length, 4);
+  assert.ok(qs.some((q) => q.startsWith("site:facebook.com")));
+  assert.ok(qs.some((q) => q.startsWith("site:xiaohongshu.com")));
+});
+
+test("crawlDistrict builds posts from search snippets and spends only SERP credits", async () => {
   const calls = [];
   const meter = new Meter(50);
   const res = await crawlDistrict(getDistrict("wan-chai"), {
@@ -37,27 +40,25 @@ test("crawlDistrict spends credits only through the meter and filters domains", 
     fetchImpl: fakeFetch(calls),
     now: new Date("2026-10-26T00:00:00Z"),
   });
-  const serp = calls.filter((c) => c.body.zone === "s");
-  const unlock = calls.filter((c) => c.body.zone === "u");
-  assert.equal(serp.length, 2, "two search queries");
-  assert.ok(unlock.length <= MAX_PAGES_PER_DISTRICT, "page cap respected");
-  assert.equal(res.creditsUsed, serp.length + unlock.length);
-  assert.ok(res.posts.length > 0);
-  assert.equal(res.posts[0].restaurant, "測試餐廳");
-  assert.ok(res.posts.every((p) => p.source === "小红书"));
+  assert.ok(calls.every((c) => c.zone === "s"), "only the SERP zone is used");
+  assert.equal(res.creditsUsed, 4);
+  // Same two URLs come back for every query; they are de-duplicated.
+  assert.equal(res.posts.length, 2);
+  assert.ok(res.posts.some((p) => p.source === "小红书" && p.restaurant === "測試餐廳"));
+  assert.ok(res.posts.some((p) => p.source === "Facebook" && p.perPerson === 120));
 });
 
 test("crawlDistrict stops cleanly when the budget runs out", async () => {
   const calls = [];
-  const meter = new Meter(1); // only the first SERP query fits
+  const meter = new Meter(2); // only two of the four queries fit
   const res = await crawlDistrict(getDistrict("kwun-tong"), {
     cfg,
     meter,
     fetchImpl: fakeFetch(calls),
   });
   assert.equal(res.quotaHit, true);
-  assert.equal(calls.filter((c) => c.body.zone === "u").length, 0);
-  assert.ok(meter.used <= 1);
+  assert.equal(calls.length, 2);
+  assert.ok(meter.used <= 2);
 });
 
 test("applyCrawlResult updates stats and keeps other districts intact", () => {
