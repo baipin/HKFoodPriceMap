@@ -20,13 +20,13 @@
 
 A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel.
 
-**Pollinations is the only data source, and the model is GPT-5.4 Nano (`openai/gpt-5.4-nano`).** On the 1st and 15th of each month, a GitHub Actions job makes one request per district through `POST https://gen.pollinations.ai/v1/chat/completions`. The model answers from its own knowledge (it does not search the web): restaurants in that district, a typical per-person price in HKD, and a source link only when it knows a real one. The result is validated, then merged into `data/districts.json`. The model can be changed with the GitHub variable `POLLINATIONS_MODEL`.
+**Pollinations is the only data source, and the model is GPT-5.4 Nano (`openai/gpt-5.4-nano`).** On the 1st and 15th of each month, a GitHub Actions job makes one request per district through `POST https://gen.pollinations.ai/v1/chat/completions`. The model answers from its own knowledge (it does not search the web) with **typical prices of common food items** in that district (for example 兩餸飯 and 茶餐廳 items, in HKD). It is deliberately **not** asked for restaurant names, because named places were often invented. The result is validated, then merged into `data/districts.json`. The model can be changed with the GitHub variable `POLLINATIONS_MODEL`.
 
 ### Validation
 
 The model's answer is not trusted:
 
-- each entry needs a restaurant name and a per-person price that can be read as a number (text such as "HK$65" or a range such as "60-80" is accepted). A `http(s)` source URL is kept when given; entries without one are shown as "AI knowledge (unverified)";
+- each entry needs an item name and a price that can be read as a number (text such as "HK$45" or a range such as "40-60" is accepted). There are no source links; every price is shown as "AI knowledge (unverified)";
 - the price must be between HK$20 and HK$2,000;
 - names and titles are length-limited and stripped of control characters;
 - at most 15 entries are kept per district, with duplicate URLs removed.
@@ -38,7 +38,7 @@ The model's answer is not trusted:
 - `data/usage.json`: request ledger maintained by the crawler
 - `lib/llm.mjs`: the Pollinations request, JSON parsing and validation
 - `lib/pipeline.mjs`: one district: call, validate, build posts
-- `lib/extract.mjs`: price and restaurant helpers, source labels, statistics
+- `lib/extract.mjs`: price helpers, source labels, statistics
 - `lib/quota.mjs`: request guard; `lib/store.mjs`: data files
 - `scripts/run-crawl.mjs`: driver run by GitHub Actions
 - `.github/workflows/crawl.yml`: runs on the 1st and 15th of each month (02:00 UTC)
@@ -60,7 +60,7 @@ The model's answer is not trusted:
 
 - The model does not browse the web. Prices are typical estimates from its own knowledge and may be out of date or wrong. Entries without a link are unverified.
 - Pollinations is a community service without a service-level agreement. When it is unavailable, that run adds no posts for the affected districts.
-- Prices and restaurant names are AI-generated estimates, not official data.
+- Prices are AI-generated typical estimates, not official or live data.
 - District centres are approximate and only position the map markers.
 
 ### Local development
@@ -76,13 +76,13 @@ python -m http.server 8000    # then open http://localhost:8000
 
 按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。
 
-**Pollinations 是唯一的數據來源，模型為 GPT-5.4 Nano（`openai/gpt-5.4-nano`）。** 每月 1 日和 15 日，GitHub Actions 會為每個地區通過 `POST https://gen.pollinations.ai/v1/chat/completions` 發出一次請求。模型根據自身知識回答（不會上網搜尋）：該地區的餐廳、典型人均價格（HKD），只有在確知真實來源時才附上網址。結果經過驗證後，合併到 `data/districts.json`。模型可透過 GitHub 變數 `POLLINATIONS_MODEL` 更改。
+**Pollinations 是唯一的數據來源，模型為 GPT-5.4 Nano（`openai/gpt-5.4-nano`）。** 每月 1 日和 15 日，GitHub Actions 會為每個地區通過 `POST https://gen.pollinations.ai/v1/chat/completions` 發出一次請求。模型根據自身知識回答（不會上網搜尋），給出該地區常見食物的典型價格（HKD），刻意不要求列出餐廳名稱，因為 AI 經常會虛構店名。結果經過驗證後，合併到 `data/districts.json`。模型可透過 GitHub 變數 `POLLINATIONS_MODEL` 更改。
 
 ### 驗證
 
 模型的回答不被完全信任：
 
-- 每則結果需要餐廳名稱，以及可讀成數字的人均價格（接受「HK$65」或「60-80」這類文字和範圍）。有 `http(s)` 來源網址時會保留；沒有的會顯示為「AI 知識（未核實）」；
+- 每則結果需要食物項目名稱，以及可讀成數字的價格（接受「HK$45」或「40-60」這類文字和範圍）。沒有來源網址，所有價格都標示為「AI 知識（未核實）」；
 - 價格必須介於 HK$20 至 HK$2,000 之間；
 - 名稱和標題有長度限制，並去除控制字元；
 - 每區最多保留 15 則結果，重複網址會被去除。
@@ -94,7 +94,7 @@ python -m http.server 8000    # then open http://localhost:8000
 - `data/usage.json`：爬蟲維護的請求帳本
 - `lib/llm.mjs`：Pollinations 請求、JSON 解析與驗證
 - `lib/pipeline.mjs`：單一地區：請求、驗證、建立帖文
-- `lib/extract.mjs`：價格與餐廳名稱輔助、來源標籤、統計
+- `lib/extract.mjs`：價格輔助、來源標籤、統計
 - `lib/quota.mjs`：請求控制；`lib/store.mjs`：數據檔案
 - `scripts/run-crawl.mjs`：由 GitHub Actions 執行的驅動程式
 - `.github/workflows/crawl.yml`：每月 1 日和 15 日運行（UTC 02:00）
@@ -116,7 +116,7 @@ python -m http.server 8000    # then open http://localhost:8000
 
 - 模型不會上網瀏覽。價格是根據模型自身知識的典型估算，可能過時或有誤。沒有網址的結果屬於未核實資料。
 - Pollinations 是社區服務，沒有服務等級協議。服務不可用時，該次運行不會為受影響地區新增帖文。
-- 價格與餐廳名稱是 AI 生成的估算，並非官方數據。
+- 價格是 AI 生成的典型估算，並非官方或實時數據。
 - 區域中心點為近似座標，僅用於定位地圖標記。
 
 ### 本地開發

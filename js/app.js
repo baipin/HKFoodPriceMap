@@ -328,11 +328,10 @@
     ]);
   }
 
-  // One restaurant / source card. Shows the source label, category, price and the
-  // page it came from (a link when one was given, plain text when the AI gave none).
+  // One price card: item, category, typical price and where it came from (AI knowledge, unverified).
   function renderPost(p) {
     var href = safeHttpUrl(p.url);
-    var titleText = p.title || p.restaurant || t("untitled");
+    var titleText = p.title || p.priceItem || t("untitled");
     var titleNode = href
       ? el("a", { href: href, target: "_blank", rel: "noopener noreferrer nofollow", text: titleText })
       : document.createTextNode(titleText);
@@ -351,8 +350,8 @@
   function aggregateRestaurants(posts) {
     var map = {};
     posts.forEach(function (p) {
-      if (!p.restaurant) return;
-      var r = map[p.restaurant] || (map[p.restaurant] = { name: p.restaurant, prices: [], count: 0 });
+      if (!p.priceItem) return;
+      var r = map[p.priceItem] || (map[p.priceItem] = { name: p.priceItem, prices: [], count: 0 });
       r.count += 1;
       if (p.perPerson != null) r.prices.push(p.perPerson);
     });
