@@ -311,11 +311,9 @@
   /* ---------- Header / footer ---------- */
   function renderMeta() {
     var db = state.db;
-    var meta = document.getElementById("updated-meta");
     if (!db) return;
     // Only show a crawl time once the crawler has actually written results.
     var when = db.status === "ok" ? fmtTime(db.generatedAt) : null;
-    meta.textContent = db.status === "empty" || !when ? t("neverUpdated") : t("dataUpdated", { time: when });
 
     var footer = document.getElementById("footer-crawl");
     footer.textContent = when ? t("footerCrawled", { time: when }) : t("footerNotRun");
@@ -372,7 +370,7 @@
         if (first) select(first.id);
       })
       .catch(function (err) {
-        document.getElementById("updated-meta").textContent = t("loadFailed");
+        document.getElementById("footer-crawl").textContent = t("loadFailed");
         document.getElementById("detail").textContent = t("errorDetail", { msg: err.message });
       });
   }
