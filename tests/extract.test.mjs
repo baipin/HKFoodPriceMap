@@ -4,15 +4,14 @@ import {
   sourceFor,
   extractPrices,
   extractRestaurant,
-  buildPostFromSearch,
+  buildPostFromRecord,
   districtStats,
   mergePosts,
 } from "../lib/extract.mjs";
 
-test("sourceFor only accepts Facebook and Xiaohongshu hosts", () => {
+test("sourceFor only accepts Facebook hosts", () => {
   assert.equal(sourceFor("https://www.facebook.com/x/posts/1"), "Facebook");
-  assert.equal(sourceFor("https://www.xiaohongshu.com/explore/abc"), "小红书");
-  assert.equal(sourceFor("https://xhslink.com/abc"), "小红书");
+  assert.equal(sourceFor("https://www.xiaohongshu.com/explore/abc"), null);
   assert.equal(sourceFor("https://evil.example.com/facebook.com"), null);
   assert.equal(sourceFor("not a url"), null);
 });
@@ -31,25 +30,20 @@ test("extractRestaurant prefers 【】 and title head", () => {
   assert.equal(extractRestaurant("大排档 | 中环美食", ""), "大排档");
 });
 
-test("buildPostFromSearch needs an allowed source and a price", () => {
-  assert.equal(
-    buildPostFromSearch({ url: "https://example.com/x", title: "人均 $100", snippet: "", fetchedAt: "t" }),
-    null
-  );
-  assert.equal(
-    buildPostFromSearch({ url: "https://www.facebook.com/p/1", title: "login", snippet: "", fetchedAt: "t" }),
-    null
-  );
+test("buildPostFromRecord needs a Facebook URL and a price", () => {
+  assert.equal(buildPostFromRecord({ url: "https://example.com/x", content: "人均 $100" }, "t"), null);
+  assert.equal(buildPostFromRecord({ url: "https://www.facebook.com/p/1", content: "login" }, "t"), null);
 });
 
-test("buildPostFromSearch produces a structured record", () => {
-  const post = buildPostFromSearch({
-    url: "https://www.xiaohongshu.com/explore/1",
-    title: "【海皇粥店】中環 - 小红书",
-    snippet: "地址：中环 人均 $65 好正",
-    fetchedAt: "2026-10-26T00:00:00.000Z",
-  });
-  assert.equal(post.source, "小红书");
+test("buildPostFromRecord produces a structured record", () => {
+  const post = buildPostFromRecord(
+    {
+      url: "https://www.facebook.com/shopA/posts/1",
+      content: "【海皇粥店】好正，地址：中环 人均 $65",
+    },
+    "2026-10-26T00:00:00.000Z"
+  );
+  assert.equal(post.source, "Facebook");
   assert.equal(post.restaurant, "海皇粥店");
   assert.deepEqual(post.prices, [65]);
   assert.equal(post.perPerson, 65);

@@ -1,80 +1,75 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { crawlDistrict, queriesFor, CREDITS_PER_DISTRICT } from "../lib/crawl.mjs";
-import { Meter } from "../lib/quota.mjs";
-import { getDistrict } from "../lib/districts.mjs";
-import { emptyDb, applyCrawlResult } from "../lib/store.mjs";
+import { parseSeeds, normalizeUrl, districtForRecord, groupRecords } from "../lib/crawl.mjs";
+import { triggerCollection, snapshotProgress, snapshotRecords } from "../lib/brightdata.mjs";
 import handler from "../api/crawl.js";
 
-const cfg = { apiKey: "k", serpZone: "s" };
+const cfg = { apiKey: "k", dataset: "gd_test" };
 
-// Fake Bright Data SERP: every query returns one priced Xiaohongshu result,
-// one priced Facebook result and one irrelevant domain.
-function fakeFetch(calls) {
+function jsonFetch(calls, payload, status = 200) {
   return async (url, init) => {
-    const body = JSON.parse(init.body);
-    calls.push(body);
-    const organic = [
-      { title: "【測試餐廳】- 小红书", link: "https://www.xiaohongshu.com/explore/1", description: "人均 $90 好食" },
-      { title: "FB 食評 - Facebook", link: "https://www.facebook.com/p/9", description: "人均 HK$120" },
-      { title: "spam", link: "https://example.com/x", description: "人均 $10" },
-    ];
-    return new Response(JSON.stringify({ organic }), { status: 200 });
+    calls.push({ url: String(url), method: init?.method, body: init?.body ? JSON.parse(init.body) : null });
+    return new Response(JSON.stringify(payload), { status, headers: { "content-type": "application/json" } });
   };
 }
 
-test("queries are SERP-only, no page fetch, 4 credits per district", () => {
-  assert.equal(CREDITS_PER_DISTRICT, 4);
-  const qs = queriesFor(getDistrict("wan-chai"));
-  assert.equal(qs.length, 4);
-  assert.ok(qs.some((q) => q.startsWith("site:facebook.com")));
-  assert.ok(qs.some((q) => q.startsWith("site:xiaohongshu.com")));
+test("normalizeUrl unifies host, drops query/trailing slash", () => {
+  assert.equal(normalizeUrl("https://m.facebook.com/Foo/?ref=x"), "https://www.facebook.com/Foo");
+  assert.equal(normalizeUrl("https://facebook.com/Foo/posts/1#c"), "https://www.facebook.com/Foo/posts/1");
+  assert.equal(normalizeUrl("nonsense"), null);
 });
 
-test("crawlDistrict builds posts from search snippets and spends only SERP credits", async () => {
-  const calls = [];
-  const meter = new Meter(50);
-  const res = await crawlDistrict(getDistrict("wan-chai"), {
-    cfg,
-    meter,
-    fetchImpl: fakeFetch(calls),
-    now: new Date("2026-10-26T00:00:00Z"),
+test("parseSeeds maps URLs to districts, skips comments and non-Facebook URLs", () => {
+  const { urlToDistrict, urls } = parseSeeds({
+    _comment: "ignored",
+    "wan-chai": ["https://www.facebook.com/shopA/posts/1", "https://example.com/x"],
+    "eastern": ["https://facebook.com/shopA/posts/1/"],
   });
-  assert.ok(calls.every((c) => c.zone === "s"), "only the SERP zone is used");
-  assert.equal(res.creditsUsed, 4);
-  // Same two URLs come back for every query; they are de-duplicated.
-  assert.equal(res.posts.length, 2);
-  assert.ok(res.posts.some((p) => p.source === "小红书" && p.restaurant === "測試餐廳"));
-  assert.ok(res.posts.some((p) => p.source === "Facebook" && p.perPerson === 120));
+  assert.equal(urls.length, 1, "duplicate and non-Facebook entries removed");
+  assert.equal(urlToDistrict.get("https://www.facebook.com/shopA/posts/1"), "wan-chai");
+  assert.throws(() => parseSeeds({ "nowhere": [] }), /unknown district/);
+  assert.throws(() => parseSeeds({ "wan-chai": "not-an-array" }), /must be an array/);
 });
 
-test("crawlDistrict stops cleanly when the budget runs out", async () => {
+test("districtForRecord matches on the input/url fields Bright Data returns", () => {
+  const map = new Map([["https://www.facebook.com/shopA", "wan-chai"]]);
+  assert.equal(districtForRecord({ input_url: "https://facebook.com/shopA/" }, map), "wan-chai");
+  assert.equal(districtForRecord({ url: "https://www.facebook.com/shopA" }, map), "wan-chai");
+  assert.equal(districtForRecord({ url: "https://www.facebook.com/other" }, map), null);
+});
+
+test("groupRecords builds posts per district and drops unmatched or price-less records", () => {
+  const { urlToDistrict } = parseSeeds({ "wan-chai": ["https://www.facebook.com/shopA"] });
+  const records = [
+    { url: "https://www.facebook.com/shopA/posts/1", input_url: "https://www.facebook.com/shopA", content: "今日食咗海皇粥，人均 $65 好正" },
+    { url: "https://www.facebook.com/shopA/posts/2", input_url: "https://www.facebook.com/shopA", content: "no price here" },
+    { url: "https://www.facebook.com/stranger/posts/3", content: "人均 $90" },
+  ];
+  const grouped = groupRecords(records, urlToDistrict, "2026-10-26T00:00:00.000Z");
+  assert.equal(grouped.get("wan-chai").length, 1);
+  assert.equal(grouped.get("wan-chai")[0].perPerson, 65);
+  assert.equal(grouped.get("wan-chai")[0].source, "Facebook");
+  assert.equal(grouped.size, 1);
+});
+
+test("trigger sends one {url} per input to the posts dataset and returns snapshot_id", async () => {
   const calls = [];
-  const meter = new Meter(2); // only two of the four queries fit
-  const res = await crawlDistrict(getDistrict("kwun-tong"), {
-    cfg,
-    meter,
-    fetchImpl: fakeFetch(calls),
+  const id = await triggerCollection(cfg, ["https://www.facebook.com/a", "https://www.facebook.com/b"], {
+    fetchImpl: jsonFetch(calls, { snapshot_id: "s_123" }),
   });
-  assert.equal(res.quotaHit, true);
-  assert.equal(calls.length, 2);
-  assert.ok(meter.used <= 2);
+  assert.equal(id, "s_123");
+  assert.equal(calls[0].method, "POST");
+  assert.match(calls[0].url, /datasets\/v3\/trigger\?dataset_id=gd_test/);
+  assert.deepEqual(calls[0].body, [{ url: "https://www.facebook.com/a" }, { url: "https://www.facebook.com/b" }]);
 });
 
-test("applyCrawlResult updates stats and keeps other districts intact", () => {
-  const db = emptyDb(new Date("2026-10-01T00:00:00Z"));
-  const post = (url, pp) => ({ url, perPerson: pp, fetchedAt: "2026-10-26T00:00:00Z", restaurant: "A" });
-  const next = applyCrawlResult(
-    db,
-    "central-western",
-    { posts: [post("u1", 60), post("u2", 120)] },
-    new Date("2026-10-26T00:00:00Z")
-  );
-  assert.equal(next.status, "ok");
-  assert.equal(next.districts["central-western"].avgPerPerson, 90);
-  assert.equal(next.districts["central-western"].postCount, 2);
-  assert.equal(next.districts["wan-chai"].avgPerPerson, null);
-  assert.equal(db.districts["central-western"].postCount, 0, "input not mutated");
+test("progress and snapshot calls use the snapshot id", async () => {
+  const calls = [];
+  assert.equal(await snapshotProgress(cfg, "s_123", { fetchImpl: jsonFetch(calls, { status: "ready" }) }), "ready");
+  assert.match(calls[0].url, /progress\/s_123$/);
+  const recs = await snapshotRecords(cfg, "s_123", { fetchImpl: jsonFetch(calls, [{ url: "x" }]) });
+  assert.equal(recs.length, 1);
+  assert.match(calls[1].url, /snapshot\/s_123\?format=json$/);
 });
 
 function mockRes() {
@@ -87,21 +82,29 @@ function mockRes() {
 
 test("API rejects requests without the CRON_SECRET", async () => {
   process.env.CRON_SECRET = "s3cret";
+  process.env.BRIGHTDATA_API_KEY = "k";
   const res = mockRes();
-  await handler({ method: "GET", headers: {}, query: { district: "wan-chai" } }, res);
+  await handler({ method: "GET", headers: {}, query: { action: "progress", snapshot: "abcd" } }, res);
   assert.equal(res.statusCode, 401);
   const res2 = mockRes();
-  await handler({ method: "GET", headers: { authorization: "Bearer wrong!!" }, query: { district: "wan-chai" } }, res2);
+  await handler({ method: "GET", headers: { authorization: "Bearer wrong!!" }, query: { action: "progress", snapshot: "abcd" } }, res2);
   assert.equal(res2.statusCode, 401);
 });
 
-test("API validates district and budget", async () => {
+test("API validates action, method, body and snapshot id", async () => {
   process.env.CRON_SECRET = "s3cret";
+  process.env.BRIGHTDATA_API_KEY = "k";
   const auth = { authorization: "Bearer s3cret" };
-  const bad = mockRes();
-  await handler({ method: "GET", headers: auth, query: { district: "nowhere" } }, bad);
-  assert.equal(bad.statusCode, 400);
-  const zero = mockRes();
-  await handler({ method: "GET", headers: auth, query: { district: "wan-chai", budget: "0" } }, zero);
-  assert.equal(zero.statusCode, 400);
+  const unknown = mockRes();
+  await handler({ method: "GET", headers: auth, query: { action: "nope" } }, unknown);
+  assert.equal(unknown.statusCode, 400);
+  const badBody = mockRes();
+  await handler({ method: "POST", headers: auth, query: { action: "trigger" }, body: { urls: "x" } }, badBody);
+  assert.equal(badBody.statusCode, 400);
+  const notFb = mockRes();
+  await handler({ method: "POST", headers: auth, query: { action: "trigger" }, body: { urls: ["https://example.com"] } }, notFb);
+  assert.equal(notFb.statusCode, 400);
+  const badId = mockRes();
+  await handler({ method: "GET", headers: auth, query: { action: "progress", snapshot: "../../etc" } }, badId);
+  assert.equal(badId.statusCode, 400);
 });

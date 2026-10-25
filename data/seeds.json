@@ -1,0 +1,21 @@
+{
+  "_comment": "Facebook page or post URLs per district (district id -> list). Only facebook.com URLs are used. Each URL costs 1 Bright Data credit per run.",
+  "central-western": [],
+  "wan-chai": [],
+  "eastern": [],
+  "southern": [],
+  "yau-tsim-mong": [],
+  "sham-shui-po": [],
+  "kowloon-city": [],
+  "wong-tai-sin": [],
+  "kwun-tong": [],
+  "kwai-tsing": [],
+  "tsuen-wan": [],
+  "tuen-mun": [],
+  "yuen-long": [],
+  "north": [],
+  "tai-po": [],
+  "sha-tin": [],
+  "sai-kung": [],
+  "islands": []
+}

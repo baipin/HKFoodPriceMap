@@ -116,7 +116,7 @@
   function initMap() {
     var map = L.map("map", {
       zoomControl: true,
-      scrollWheelZoom: false,
+      scrollWheelZoom: true,
       minZoom: 10,
       maxZoom: 15,
     });
