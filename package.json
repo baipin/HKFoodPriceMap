@@ -1,0 +1,15 @@
+{
+  "name": "hkfm-food-price-map",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hong Kong food price map by district, fed by a scheduled Bright Data crawler.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "crawl": "node scripts/run-crawl.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,43 @@
+name: Crawl food prices
+
+on:
+  schedule:
+    # Every Monday 02:00 UTC (10:00 HKT). ~4 runs/month.
+    - cron: "0 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run crawler (via Vercel function, key stays in Vercel)
+        env:
+          CRAWL_URL: ${{ secrets.CRAWL_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: node scripts/run-crawl.mjs
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "crawler-bot"
+          git config user.email "crawler-bot@users.noreply.github.com"
+          git add data/districts.json data/usage.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore(data): crawl $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
