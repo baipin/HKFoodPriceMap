@@ -233,11 +233,12 @@ h1, h2, h3, p { margin: 0; }
 }
 .scrim.is-open { opacity: 0.32; pointer-events: auto; }
 
+/* Opens from the right edge, where the menu button sits. */
 .drawer {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 1200;
   width: 360px;
   max-width: calc(100vw - 56px);
@@ -245,9 +246,9 @@ h1, h2, h3, p { margin: 0; }
   flex-direction: column;
   background: var(--md-surface-container-low);
   color: var(--md-on-surface);
-  border-radius: 0 var(--md-shape-xl) var(--md-shape-xl) 0;
+  border-radius: var(--md-shape-xl) 0 0 var(--md-shape-xl);
   box-shadow: var(--md-elev-3);
-  transform: translateX(-100%);
+  transform: translateX(100%);
   visibility: hidden;
   transition: transform 0.25s ease, visibility 0.25s;
 }
