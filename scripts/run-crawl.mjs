@@ -9,6 +9,7 @@ import { DISTRICTS_FILE, USAGE_FILE, SEEDS_FILE, applyCrawlResult, emptyDb, read
 import { normalizeLedger, recordRun, runBudget, PER_RUN_CAP } from "../lib/quota.mjs";
 import { parseSeeds, normalizeUrl } from "../lib/crawl.mjs";
 import { buildPostFromRecord } from "../lib/extract.mjs";
+import { classifyUrl, creditCost } from "../lib/facebook-kind.mjs";
 import { DISTRICTS } from "../lib/districts.mjs";
 
 const baseUrl = process.env.CRAWL_URL;
@@ -64,8 +65,22 @@ if (runCap <= 0) {
   process.exit(0);
 }
 
-const urls = seeds.urls.slice(0, runCap);
-console.log(`Scraping ${urls.length} URL(s), ${CONCURRENCY} at a time ...`);
+// Pick URLs in order while their total credit cost fits the run budget.
+// A post costs 1 credit; a group or page costs LIMIT_PER_INPUT credits.
+const urls = [];
+let planned = 0;
+for (const url of seeds.urls) {
+  const kind = classifyUrl(url);
+  if (!kind) {
+    console.log(`skipped (not a post, group or page URL): ${url}`);
+    continue;
+  }
+  const cost = creditCost(kind);
+  if (planned + cost > runCap) break;
+  planned += cost;
+  urls.push(url);
+}
+console.log(`Scraping ${urls.length} URL(s) for ~${planned} credit(s), ${CONCURRENCY} at a time ...`);
 
 const fetchedAt = new Date().toISOString();
 const postsByDistrict = new Map(); // districtId -> posts

@@ -1,7 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { parseSeeds, normalizeUrl, districtForRecord, groupRecords } from "../lib/crawl.mjs";
-import { scrapeUrl, parseRecords } from "../lib/brightdata.mjs";
+import { scrapeUrl, parseRecords, buildBody } from "../lib/brightdata.mjs";
+import { classifyUrl, creditCost, DATASETS, LIMIT_PER_INPUT } from "../lib/facebook-kind.mjs";
 import handler from "../api/crawl.js";
 
 const cfg = { apiKey: "k", dataset: "gd_test" };
@@ -60,20 +61,20 @@ test("parseRecords accepts a JSON array and NDJSON", () => {
 
 test("scrapeUrl posts one URL to the synchronous /scrape endpoint", async () => {
   const calls = [];
-  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", {
+  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", "post", {
     fetchImpl: fakeFetch(calls, { body: '[{"url":"https://www.facebook.com/a/posts/1","content":"人均 $80"}]' }),
   });
   assert.equal(res.status, "ok");
   assert.equal(res.records.length, 1);
   assert.equal(calls[0].method, "POST");
-  assert.match(calls[0].url, /datasets\/v3\/scrape\?dataset_id=gd_test&format=json$/);
+  assert.match(calls[0].url, new RegExp("datasets/v3/scrape\\?dataset_id=" + DATASETS.post + "&format=json$"));
   assert.deepEqual(calls[0].body, [{ url: "https://www.facebook.com/a/posts/1" }]);
   assert.doesNotMatch(calls[0].url, /trigger|snapshot|progress/);
 });
 
 test("scrapeUrl reports 202 as timeout (no snapshot is fetched)", async () => {
   const calls = [];
-  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", {
+  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", "post", {
     fetchImpl: fakeFetch(calls, { status: 202, body: '{"snapshot_id":"s_1"}' }),
   });
   assert.equal(res.status, "timeout");
@@ -82,7 +83,7 @@ test("scrapeUrl reports 202 as timeout (no snapshot is fetched)", async () => {
 
 test("scrapeUrl throws on HTTP errors", async () => {
   await assert.rejects(
-    scrapeUrl(cfg, "https://www.facebook.com/a", { fetchImpl: fakeFetch([], { status: 500 }) }),
+    scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", "post", { fetchImpl: fakeFetch([], { status: 500 }) }),
     /HTTP 500/
   );
 });
@@ -119,4 +120,39 @@ test("API validates method and body", async () => {
   const notFb = mockRes();
   await handler({ method: "POST", headers: auth, body: { url: "https://example.com/x" } }, notFb);
   assert.equal(notFb.statusCode, 400);
+});
+
+test("classifyUrl recognises post, group and page URLs", () => {
+  assert.equal(classifyUrl("https://www.facebook.com/shop/posts/123"), "post");
+  assert.equal(classifyUrl("https://www.facebook.com/permalink.php?story_fbid=1&id=2"), "post");
+  assert.equal(classifyUrl("https://www.facebook.com/groups/hkfood"), "group");
+  assert.equal(classifyUrl("https://www.facebook.com/shopA"), "page");
+  assert.equal(classifyUrl("https://www.facebook.com/profile.php?id=100"), "page");
+  assert.equal(classifyUrl("https://www.facebook.com/search/top?q=x"), null);
+  assert.equal(classifyUrl("not a url"), null);
+});
+
+test("credit cost: 1 per post, LIMIT_PER_INPUT per group or page", () => {
+  assert.equal(creditCost("post"), 1);
+  assert.equal(creditCost("group"), LIMIT_PER_INPUT);
+  assert.equal(creditCost("page"), LIMIT_PER_INPUT);
+});
+
+test("request bodies follow the docs: array for posts, input + limit_per_input for groups/pages", () => {
+  assert.deepEqual(buildBody("https://www.facebook.com/a/posts/1", "post"), [{ url: "https://www.facebook.com/a/posts/1" }]);
+  assert.deepEqual(buildBody("https://www.facebook.com/groups/g", "group"), {
+    input: [{ url: "https://www.facebook.com/groups/g" }],
+    limit_per_input: LIMIT_PER_INPUT,
+  });
+});
+
+test("normalizeUrl keeps the query for profile.php page URLs", () => {
+  assert.equal(normalizeUrl("https://www.facebook.com/profile.php?id=100&ref=x"), "https://www.facebook.com/profile.php?id=100&ref=x");
+});
+
+test("scrapeUrl uses the group dataset for group URLs", async () => {
+  const calls = [];
+  await scrapeUrl(cfg, "https://www.facebook.com/groups/g", "group", { fetchImpl: fakeFetch(calls) });
+  assert.match(calls[0].url, new RegExp("dataset_id=" + DATASETS.group));
+  assert.equal(calls[0].body.limit_per_input, LIMIT_PER_INPUT);
 });

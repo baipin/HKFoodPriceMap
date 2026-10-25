@@ -1,5 +1,5 @@
 {
-  "_comment": "Facebook POST URLs per district (district id -> list), e.g. https://www.facebook.com/<page>/posts/<id>. The default dataset (gd_lyclm1571iy3mv57zw) is 'posts by post URL'; page URLs need a different dataset. Each URL costs about 1 credit per run.",
+  "_comment": "Facebook URLs per district (district id -> list). Accepted: post URLs (1 credit each), group URLs and page/profile URLs (up to 10 posts each, 10 credits each per run). Other URLs are skipped.",
   "central-western": [],
   "wan-chai": [],
   "eastern": [],

@@ -6,12 +6,12 @@
 
 ## English
 
-A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel. A scheduled crawler uses the **Bright Data Facebook Scraper API** (posts dataset, collect by post URL) to pull posts from Facebook pages and posts listed in `data/seeds.json`, extracts per-person prices from the post text, and writes the results to `data/districts.json`.
+A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel. A scheduled crawler uses the **Bright Data Facebook Scraper API** to collect posts from Facebook post, group and page URLs listed in `data/seeds.json`, extracts per-person prices from the post text, and writes the results to `data/districts.json`.
 
 ### How the data is collected
 
 - Facebook only. Xiaohongshu (小红书) is not covered.
-- `data/seeds.json` lists Facebook **post** URLs for each district (the default dataset is "posts by post URL"). The crawler only reads these URLs. It does not search by keyword.
+- `data/seeds.json` lists Facebook URLs for each district: single **post** URLs (dataset "posts by post URL"), **group** URLs ("posts by group URL") and **page / profile** URLs ("page posts by profile URL"). The crawler only reads these URLs and does not search by keyword. The URL type decides the dataset.
 - The crawler calls Bright Data's synchronous `/datasets/v3/scrape` endpoint once per seed URL (four at a time). The records come back in the response; no snapshot is used. If a URL takes longer than one minute, Bright Data returns HTTP 202 and that URL is skipped for this run.
 - A record is kept only if its text mentions a per-person price between HK$20 and HK$2,000.
 - Restaurant names are a best-effort guess from 【】brackets or the start of the post.
@@ -34,7 +34,6 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 2. In Vercel → Settings → Environment Variables, add (keep these out of the code):
    - `BRIGHTDATA_API_KEY`: your Bright Data API key
    - `CRON_SECRET`: a long random string that protects `/api/crawl` (for example `openssl rand -hex 32`)
-   - `BRIGHTDATA_DATASET_ID` (optional): overrides the default posts dataset `gd_lyclm1571iy3mv57zw`
 3. In GitHub → Settings → Secrets and variables → Actions, add:
    - `CRAWL_URL`: `https://hkfoodpricemap.vercel.app`
    - `CRON_SECRET`: the same value as in Vercel
@@ -43,10 +42,10 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 
 ### Credit limit (5,000 per month)
 
-- The dataset charges one credit per record. The crawler sends one URL per record, so each URL in `seeds.json` costs about one credit per run.
+- Bright Data charges per record. A post URL costs 1 credit per run. A group or page URL is limited to 10 posts (`LIMIT_PER_INPUT` in `lib/facebook-kind.mjs`), so it costs up to 10 credits per run.
 - `lib/quota.mjs` sets a monthly limit of 5,000, keeps a reserve of 500 (at most 4,500 used), and caps a single run at 300 URLs.
 - Before each run the crawler reads `data/usage.json`. If the budget is exhausted, the run is skipped. Each run also stops at the per-run cap of 300 URLs.
-- If a request fails, the crawler still counts one credit for it, to stay on the safe side.
+- If a request fails, the crawler still counts the URL's cost, to stay on the safe side.
 - The ledger only counts credits this project has spent. Check the Bright Data dashboard for the real figure.
 
 ### Data notes and limitations
@@ -67,12 +66,12 @@ python -m http.server 8000    # then open http://localhost:8000
 
 ## 繁體中文
 
-按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。定時爬蟲使用 **Bright Data Facebook Scraper API**（帖文數據集，按帖文網址收集），抓取 `data/seeds.json` 中列出的 Facebook 帖文網址，從帖文內容提取人均價格，寫入 `data/districts.json`。
+按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。定時爬蟲使用 **Bright Data Facebook Scraper API**（帖文數據集，按帖文網址收集），抓取 `data/seeds.json` 中列出的 Facebook 帖文、群組及主頁網址，從帖文內容提取人均價格，寫入 `data/districts.json`。
 
 ### 數據收集方式
 
 - 只支援 Facebook。小紅書不在範圍內。
-- `data/seeds.json` 列出每區的 Facebook **帖文**網址（預設數據集為「按帖文網址收集」）。爬蟲只讀取這些網址，不會按關鍵字搜尋。
+- `data/seeds.json` 列出每區的 Facebook 網址：**帖文**網址（「按帖文網址收集」）、**群組**網址（「按群組網址收集」）及**主頁／個人檔案**網址（「按個人檔案網址查看頁面帖子」）。爬蟲只讀取這些網址，不會按關鍵字搜尋，網址類型決定使用哪個數據集。
 - 每次運行，爬蟲對每個種子網址呼叫 Bright Data 的同步 `/datasets/v3/scrape` 端點（同時四個），記錄直接在回應中返回，不使用快照。若某網址超過一分鐘，Bright Data 會返回 HTTP 202，該網址在本次運行中跳過。
 - 只有內容提及 HK$20 至 HK$2,000 人均價的記錄會被保留。
 - 餐廳名稱是盡力而為的推測，取自【】括號或帖文開頭。
@@ -95,7 +94,6 @@ python -m http.server 8000    # then open http://localhost:8000
 2. 在 Vercel → Settings → Environment Variables 中新增（請勿寫入程式碼）：
    - `BRIGHTDATA_API_KEY`：你的 Bright Data API 密鑰
    - `CRON_SECRET`：保護 `/api/crawl` 的長隨機字串（例如 `openssl rand -hex 32`）
-   - `BRIGHTDATA_DATASET_ID`（可選）：覆寫預設的帖文數據集 `gd_lyclm1571iy3mv57zw`
 3. 在 GitHub → Settings → Secrets and variables → Actions 中新增：
    - `CRAWL_URL`：`https://hkfoodpricemap.vercel.app`
    - `CRON_SECRET`：與 Vercel 中的值相同
@@ -104,10 +102,10 @@ python -m http.server 8000    # then open http://localhost:8000
 
 ### 額度上限（每月 5,000）
 
-- 數據集每筆記錄消耗 1 額度。爬蟲每個網址只送出一筆，因此 `seeds.json` 中每個網址每次運行約消耗 1 額度。
+- Bright Data 按記錄收費。帖文網址每次運行消耗 1 額度；群組或主頁網址最多取 10 篇帖文（`lib/facebook-kind.mjs` 中的 `LIMIT_PER_INPUT`），每次運行最多消耗 10 額度。
 - `lib/quota.mjs` 設定每月上限 5,000，保留 500 作緩衝（即最多使用 4,500），並限制單次運行最多 300 個網址。
 - 每次運行前，爬蟲會讀取 `data/usage.json`。額度不足時跳過該次運行；單次運行也以 300 個網址為上限。
-- 如果某個請求失敗，爬蟲仍會計入一個額度，以保持安全側。
+- 如果某個請求失敗，爬蟲仍會計入該網址的消耗額度，以保持安全側。
 - 帳本只記錄本專案消耗的額度，實際用量請以 Bright Data 控制台為準。
 
 ### 數據備註與限制
