@@ -6,24 +6,24 @@
 
 ## English
 
-A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel. A scheduled crawler uses the **Bright Data Facebook Scraper API** to collect posts from Facebook post, group and page URLs listed in `data/seeds.json`, extracts per-person prices from the post text, and writes the results to `data/districts.json`.
+A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel.
 
-### How the data is collected
+The data is **not** scraped from social media directly. A weekly job does three things for each district:
 
-- Facebook only. Xiaohongshu (小红书) is not covered.
-- `data/seeds.json` lists Facebook URLs for each district: single **post** URLs (dataset "posts by post URL"), **group** URLs ("posts by group URL") and **page / profile** URLs ("page posts by profile URL"). The crawler only reads these URLs and does not search by keyword. The URL type decides the dataset.
-- The crawler calls Bright Data's synchronous `/datasets/v3/scrape` endpoint once per seed URL (four at a time). The records come back in the response; no snapshot is used. If a URL takes longer than one minute, Bright Data returns HTTP 202 and that URL is skipped for this run.
-- A record is kept only if its text mentions a per-person price between HK$20 and HK$2,000.
-- Restaurant names are a best-effort guess from 【】brackets or the start of the post.
+1. Runs three web searches through the **Bright Data SERP API** (for example 兩餸飯, 茶餐廳, and 食評 with 人均 / HK$). Results can come from any site, including social media search results. Only the title and snippet are used. Pages are never fetched.
+2. Sends the results to **Pollinations** (a public AI text service, no key needed), which returns the restaurant name and per-person price for each result that states one. The model refers to results by index, so it cannot invent links, and each price must be between HK$20 and HK$2,000.
+3. Merges the validated posts into `data/districts.json`, and records credit use in `data/usage.json`.
 
 ### Project layout
 
 - `index.html`, `css/style.css`, `js/i18n.js`, `js/app.js`: the site (Leaflet + OpenStreetMap tiles)
-- `data/seeds.json`: Facebook URLs per district (you maintain this)
 - `data/districts.json`: per-district statistics and posts (read by the site)
 - `data/usage.json`: credit ledger maintained by the crawler
-- `api/crawl.js`: authenticated Vercel function that proxies one scrape call per URL; it holds the API key
-- `lib/`: districts, credit guard, Bright Data client, URL matching, extraction and statistics
+- `api/search.js`: authenticated Vercel function that proxies Bright Data SERP calls; it holds the API key
+- `lib/search.mjs`: query builder, SERP client, source labels
+- `lib/llm.mjs`: Pollinations prompt, JSON parsing and validation
+- `lib/pipeline.mjs`: one district: search, dedupe, extract, build posts
+- `lib/quota.mjs`: credit guard; `lib/extract.mjs`: price and restaurant helpers; `lib/store.mjs`: data files
 - `scripts/run-crawl.mjs`: driver run by GitHub Actions
 - `.github/workflows/crawl.yml`: runs every Monday (02:00 UTC)
 - `tests/`: unit tests (`npm test`)
@@ -33,27 +33,28 @@ A map of Hong Kong's 18 districts showing average food prices per person. The si
 1. Push the repository to GitHub and import it into Vercel (no build step).
 2. In Vercel → Settings → Environment Variables, add (keep these out of the code):
    - `BRIGHTDATA_API_KEY`: your Bright Data API key
-   - `CRON_SECRET`: a long random string that protects `/api/crawl` (for example `openssl rand -hex 32`)
+   - `BRIGHTDATA_ZONE_SERP`: the name of your SERP zone (shown in the Bright Data dashboard)
+   - `CRON_SECRET`: a long random string that protects `/api/search` (for example `openssl rand -hex 32`)
 3. In GitHub → Settings → Secrets and variables → Actions, add:
    - `CRAWL_URL`: `https://hkfoodpricemap.vercel.app`
    - `CRON_SECRET`: the same value as in Vercel
-4. Fill in `data/seeds.json` with Facebook URLs. With an empty list the crawler does nothing.
-5. Run the "Crawl food prices" workflow once manually to check it.
+4. Run the "Crawl food prices" workflow once manually to check it.
 
-### Credit limit (5,000 per month)
+Pollinations needs no key. If it ever needs one, add it to the workflow as a secret.
 
-- Bright Data charges per record. A post URL costs 1 credit per run. A group or page URL is limited to 10 posts (`LIMIT_PER_INPUT` in `lib/facebook-kind.mjs`), so it costs up to 10 credits per run.
-- `lib/quota.mjs` sets a monthly limit of 5,000, keeps a reserve of 500 (at most 4,500 used), and caps a single run at 300 URLs.
-- Before each run the crawler reads `data/usage.json`. If the budget is exhausted, the run is skipped. Each run also stops at the per-run cap of 300 URLs.
-- If a request fails, the crawler still counts the URL's cost, to stay on the safe side.
-- The ledger only counts credits this project has spent. Check the Bright Data dashboard for the real figure.
+### Credits and limits
+
+- Each SERP search costs one credit. Each run uses 3 searches per district, so 54 per run, or about 230 per month with weekly runs.
+- `lib/quota.mjs` sets a monthly limit of 5,000 with a reserve of 500, and caps a single run at 100.
+- Before each run the crawler reads `data/usage.json`. If the budget is too small for a full run, it skips the run. Districts not reached keep their previous data.
 
 ### Data notes and limitations
 
-- Prices are per-person estimates taken from post text. They are not official prices.
-- The record field names (`url`, `input_url`, `content`) are assumed; check them against a real response from the dataset.
+- Search results usually contain only short snippets. Many results will not mention a price, so some districts may have few or no posts. That is expected.
+- Pollinations is a free community service without a service-level agreement. If it is unavailable, that run produces no new posts for the affected districts. The site keeps its last data.
+- The AI can make mistakes. Prices and restaurant names are estimates from search snippets, not official data.
+- Social media platforms' terms restrict automated access. This project only uses what search engines return, but please check that your use of those results is lawful and compliant.
 - District centres are approximate and only position the map markers.
-- Facebook's terms restrict automated access, and Bright Data's use is subject to those terms. Check that your use is lawful and compliant.
 
 ### Local development
 
@@ -66,24 +67,24 @@ python -m http.server 8000    # then open http://localhost:8000
 
 ## 繁體中文
 
-按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。定時爬蟲使用 **Bright Data Facebook Scraper API**（帖文數據集，按帖文網址收集），抓取 `data/seeds.json` 中列出的 Facebook 帖文、群組及主頁網址，從帖文內容提取人均價格，寫入 `data/districts.json`。
+按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。
 
-### 數據收集方式
+數據**不是**直接從社交媒體爬取的。每週一的工作會為每個地區執行三個步驟：
 
-- 只支援 Facebook。小紅書不在範圍內。
-- `data/seeds.json` 列出每區的 Facebook 網址：**帖文**網址（「按帖文網址收集」）、**群組**網址（「按群組網址收集」）及**主頁／個人檔案**網址（「按個人檔案網址查看頁面帖子」）。爬蟲只讀取這些網址，不會按關鍵字搜尋，網址類型決定使用哪個數據集。
-- 每次運行，爬蟲對每個種子網址呼叫 Bright Data 的同步 `/datasets/v3/scrape` 端點（同時四個），記錄直接在回應中返回，不使用快照。若某網址超過一分鐘，Bright Data 會返回 HTTP 202，該網址在本次運行中跳過。
-- 只有內容提及 HK$20 至 HK$2,000 人均價的記錄會被保留。
-- 餐廳名稱是盡力而為的推測，取自【】括號或帖文開頭。
+1. 透過 **Bright Data SERP API** 執行三次網頁搜尋（例如「兩餸飯」、「茶餐廳」，以及「食評 人均 HK$」）。搜尋結果可來自任何網站，包括社交媒體的搜尋結果。只使用標題和摘要，不會抓取網頁內容。
+2. 把搜尋結果交給 **Pollinations**（公開的 AI 文字服務，無需密鑰），由它為每則註明人均價格的結果提取餐廳名稱和人均價。模型以結果編號來引用，因此無法虛構網址；價格必須介於 HK$20 至 HK$2,000 之間。
+3. 把通過驗證的帖文合併到 `data/districts.json`，並把額度消耗記錄在 `data/usage.json`。
 
 ### 專案結構
 
 - `index.html`、`css/style.css`、`js/i18n.js`、`js/app.js`：網站（Leaflet + OpenStreetMap 底圖）
-- `data/seeds.json`：每區的 Facebook 網址（由你維護）
 - `data/districts.json`：各區統計及帖文（網站讀取此檔）
 - `data/usage.json`：爬蟲維護的額度帳本
-- `api/crawl.js`：已驗證身份的 Vercel 函式，每個網址代理一次 Bright Data 抓取呼叫，並持有 API 密鑰
-- `lib/`：區域資料、額度控制、Bright Data 客戶端、網址配對、提取及統計
+- `api/search.js`：已驗證身份的 Vercel 函式，代理 Bright Data SERP 呼叫，並持有 API 密鑰
+- `lib/search.mjs`：查詢語句、SERP 客戶端、來源標籤
+- `lib/llm.mjs`：Pollinations 提示、JSON 解析與驗證
+- `lib/pipeline.mjs`：單一地區的流程：搜尋、去重、提取、建立帖文
+- `lib/quota.mjs`：額度控制；`lib/extract.mjs`：價格與餐廳名稱輔助；`lib/store.mjs`：數據檔案
 - `scripts/run-crawl.mjs`：由 GitHub Actions 執行的驅動程式
 - `.github/workflows/crawl.yml`：每週一運行（UTC 02:00）
 - `tests/`：單元測試（`npm test`）
@@ -93,27 +94,28 @@ python -m http.server 8000    # then open http://localhost:8000
 1. 將專案推送到 GitHub，並在 Vercel 匯入（無需建置步驟）。
 2. 在 Vercel → Settings → Environment Variables 中新增（請勿寫入程式碼）：
    - `BRIGHTDATA_API_KEY`：你的 Bright Data API 密鑰
-   - `CRON_SECRET`：保護 `/api/crawl` 的長隨機字串（例如 `openssl rand -hex 32`）
+   - `BRIGHTDATA_ZONE_SERP`：SERP zone 的名稱（在 Bright Data 控制台查看）
+   - `CRON_SECRET`：保護 `/api/search` 的長隨機字串（例如 `openssl rand -hex 32`）
 3. 在 GitHub → Settings → Secrets and variables → Actions 中新增：
    - `CRAWL_URL`：`https://hkfoodpricemap.vercel.app`
    - `CRON_SECRET`：與 Vercel 中的值相同
-4. 在 `data/seeds.json` 中填入 Facebook 網址。清單為空時爬蟲不會執行任何操作。
-5. 手動執行一次 “Crawl food prices” 工作流程以確認運作。
+4. 手動執行一次 “Crawl food prices” 工作流程以確認運作。
 
-### 額度上限（每月 5,000）
+Pollinations 無需密鑰。如果日後需要，請把密鑰加入工作流程的 secret。
 
-- Bright Data 按記錄收費。帖文網址每次運行消耗 1 額度；群組或主頁網址最多取 10 篇帖文（`lib/facebook-kind.mjs` 中的 `LIMIT_PER_INPUT`），每次運行最多消耗 10 額度。
-- `lib/quota.mjs` 設定每月上限 5,000，保留 500 作緩衝（即最多使用 4,500），並限制單次運行最多 300 個網址。
-- 每次運行前，爬蟲會讀取 `data/usage.json`。額度不足時跳過該次運行；單次運行也以 300 個網址為上限。
-- 如果某個請求失敗，爬蟲仍會計入該網址的消耗額度，以保持安全側。
-- 帳本只記錄本專案消耗的額度，實際用量請以 Bright Data 控制台為準。
+### 額度與限制
+
+- 每次 SERP 搜尋消耗 1 額度。每區每次運行用 3 次搜尋，每次運行共 54 額度；按每週運行計算，每月約 230 額度。
+- `lib/quota.mjs` 設定每月上限 5,000，保留 500 作緩衝，並限制單次運行上限為 100。
+- 每次運行前，爬蟲會讀取 `data/usage.json`。額度不足以完成一次完整運行時，會跳過該次運行；未處理的地區保留原有數據。
 
 ### 數據備註與限制
 
-- 價格是從帖文內容估算的人均消費，並非官方價格。
-- 記錄欄位名稱（`url`、`input_url`、`content`）是假設的，請以實際回應核對。
+- 搜尋結果通常只有簡短摘要，很多結果不會提及價格，因此部分地區的帖文可能很少甚至沒有。這是預期的情況。
+- Pollinations 是免費的社區服務，沒有服務等級協議。如果它不可用，該次運行不會為受影響地區產生新帖文，網站會保留上一次的數據。
+- AI 可能出錯。價格與餐廳名稱是從搜尋摘要推測的，並非官方數據。
+- 社交媒體平台的服務條款限制自動化存取。本專案只使用搜尋引擎返回的內容，但請確認你使用這些結果是合法合規的。
 - 區域中心點為近似座標，僅用於定位地圖標記。
-- Facebook 的服務條款限制自動化存取，Bright Data 的使用同樣受該等條款約束。請確認你的使用方式合法且合規。
 
 ### 本地開發
 
