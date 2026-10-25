@@ -1,15 +1,15 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { parseSeeds, normalizeUrl, districtForRecord, groupRecords } from "../lib/crawl.mjs";
-import { triggerCollection, snapshotProgress, snapshotRecords } from "../lib/brightdata.mjs";
+import { scrapeUrl, parseRecords } from "../lib/brightdata.mjs";
 import handler from "../api/crawl.js";
 
 const cfg = { apiKey: "k", dataset: "gd_test" };
 
-function jsonFetch(calls, payload, status = 200) {
+function fakeFetch(calls, { status = 200, body = "[]" } = {}) {
   return async (url, init) => {
     calls.push({ url: String(url), method: init?.method, body: init?.body ? JSON.parse(init.body) : null });
-    return new Response(JSON.stringify(payload), { status, headers: { "content-type": "application/json" } });
+    return new Response(body, { status });
   };
 }
 
@@ -31,7 +31,7 @@ test("parseSeeds maps URLs to districts, skips comments and non-Facebook URLs", 
   assert.throws(() => parseSeeds({ "wan-chai": "not-an-array" }), /must be an array/);
 });
 
-test("districtForRecord matches on the input/url fields Bright Data returns", () => {
+test("districtForRecord matches on the input/url fields", () => {
   const map = new Map([["https://www.facebook.com/shopA", "wan-chai"]]);
   assert.equal(districtForRecord({ input_url: "https://facebook.com/shopA/" }, map), "wan-chai");
   assert.equal(districtForRecord({ url: "https://www.facebook.com/shopA" }, map), "wan-chai");
@@ -52,24 +52,39 @@ test("groupRecords builds posts per district and drops unmatched or price-less r
   assert.equal(grouped.size, 1);
 });
 
-test("trigger sends one {url} per input to the posts dataset and returns snapshot_id", async () => {
-  const calls = [];
-  const id = await triggerCollection(cfg, ["https://www.facebook.com/a", "https://www.facebook.com/b"], {
-    fetchImpl: jsonFetch(calls, { snapshot_id: "s_123" }),
-  });
-  assert.equal(id, "s_123");
-  assert.equal(calls[0].method, "POST");
-  assert.match(calls[0].url, /datasets\/v3\/trigger\?dataset_id=gd_test/);
-  assert.deepEqual(calls[0].body, [{ url: "https://www.facebook.com/a" }, { url: "https://www.facebook.com/b" }]);
+test("parseRecords accepts a JSON array and NDJSON", () => {
+  assert.deepEqual(parseRecords('[{"a":1},{"a":2}]'), [{ a: 1 }, { a: 2 }]);
+  assert.deepEqual(parseRecords('{"a":1}\n{"a":2}\n'), [{ a: 1 }, { a: 2 }]);
+  assert.deepEqual(parseRecords(""), []);
 });
 
-test("progress and snapshot calls use the snapshot id", async () => {
+test("scrapeUrl posts one URL to the synchronous /scrape endpoint", async () => {
   const calls = [];
-  assert.equal(await snapshotProgress(cfg, "s_123", { fetchImpl: jsonFetch(calls, { status: "ready" }) }), "ready");
-  assert.match(calls[0].url, /progress\/s_123$/);
-  const recs = await snapshotRecords(cfg, "s_123", { fetchImpl: jsonFetch(calls, [{ url: "x" }]) });
-  assert.equal(recs.length, 1);
-  assert.match(calls[1].url, /snapshot\/s_123\?format=json$/);
+  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", {
+    fetchImpl: fakeFetch(calls, { body: '[{"url":"https://www.facebook.com/a/posts/1","content":"人均 $80"}]' }),
+  });
+  assert.equal(res.status, "ok");
+  assert.equal(res.records.length, 1);
+  assert.equal(calls[0].method, "POST");
+  assert.match(calls[0].url, /datasets\/v3\/scrape\?dataset_id=gd_test&format=json$/);
+  assert.deepEqual(calls[0].body, [{ url: "https://www.facebook.com/a/posts/1" }]);
+  assert.doesNotMatch(calls[0].url, /trigger|snapshot|progress/);
+});
+
+test("scrapeUrl reports 202 as timeout (no snapshot is fetched)", async () => {
+  const calls = [];
+  const res = await scrapeUrl(cfg, "https://www.facebook.com/a/posts/1", {
+    fetchImpl: fakeFetch(calls, { status: 202, body: '{"snapshot_id":"s_1"}' }),
+  });
+  assert.equal(res.status, "timeout");
+  assert.equal(calls.length, 1, "no follow-up request");
+});
+
+test("scrapeUrl throws on HTTP errors", async () => {
+  await assert.rejects(
+    scrapeUrl(cfg, "https://www.facebook.com/a", { fetchImpl: fakeFetch([], { status: 500 }) }),
+    /HTTP 500/
+  );
 });
 
 function mockRes() {
@@ -84,27 +99,24 @@ test("API rejects requests without the CRON_SECRET", async () => {
   process.env.CRON_SECRET = "s3cret";
   process.env.BRIGHTDATA_API_KEY = "k";
   const res = mockRes();
-  await handler({ method: "GET", headers: {}, query: { action: "progress", snapshot: "abcd" } }, res);
+  await handler({ method: "POST", headers: {}, body: { url: "https://www.facebook.com/a" } }, res);
   assert.equal(res.statusCode, 401);
   const res2 = mockRes();
-  await handler({ method: "GET", headers: { authorization: "Bearer wrong!!" }, query: { action: "progress", snapshot: "abcd" } }, res2);
+  await handler({ method: "POST", headers: { authorization: "Bearer wrong!!" }, body: { url: "https://www.facebook.com/a" } }, res2);
   assert.equal(res2.statusCode, 401);
 });
 
-test("API validates action, method, body and snapshot id", async () => {
+test("API validates method and body", async () => {
   process.env.CRON_SECRET = "s3cret";
   process.env.BRIGHTDATA_API_KEY = "k";
   const auth = { authorization: "Bearer s3cret" };
-  const unknown = mockRes();
-  await handler({ method: "GET", headers: auth, query: { action: "nope" } }, unknown);
-  assert.equal(unknown.statusCode, 400);
+  const get = mockRes();
+  await handler({ method: "GET", headers: auth, query: {} }, get);
+  assert.equal(get.statusCode, 405);
   const badBody = mockRes();
-  await handler({ method: "POST", headers: auth, query: { action: "trigger" }, body: { urls: "x" } }, badBody);
+  await handler({ method: "POST", headers: auth, body: { url: 42 } }, badBody);
   assert.equal(badBody.statusCode, 400);
   const notFb = mockRes();
-  await handler({ method: "POST", headers: auth, query: { action: "trigger" }, body: { urls: ["https://example.com"] } }, notFb);
+  await handler({ method: "POST", headers: auth, body: { url: "https://example.com/x" } }, notFb);
   assert.equal(notFb.statusCode, 400);
-  const badId = mockRes();
-  await handler({ method: "GET", headers: auth, query: { action: "progress", snapshot: "../../etc" } }, badId);
-  assert.equal(badId.statusCode, 400);
 });
