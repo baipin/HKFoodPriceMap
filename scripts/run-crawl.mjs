@@ -28,7 +28,19 @@ let updated = 0;
 
 for (const d of DISTRICTS) {
   calls++;
-  const result = await runDistrict(d, { fetchedAt });
+  let result;
+  try {
+    result = await runDistrict(d, { fetchedAt });
+  } catch (err) {
+    if (err.status === 402) {
+      console.error("Pollinations returned HTTP 402 (payment required): the account has no credit for this model, or the key is missing. Add POLLINATIONS_API_KEY from a funded account, or choose a model you can pay for. Stopping; existing data is kept.");
+    } else if (err.status === 401 || err.status === 403) {
+      console.error(`Pollinations returned HTTP ${err.status}: the key is invalid or not allowed for this model. Check POLLINATIONS_API_KEY. Stopping; existing data is kept.`);
+    } else {
+      console.error(err.message);
+    }
+    process.exit(1);
+  }
   for (const e of result.errors) console.error(`${d.id}: ${e}`);
   db = applyCrawlResult(db, d.id, { posts: result.posts }, new Date());
   if (result.posts.length) updated++;
