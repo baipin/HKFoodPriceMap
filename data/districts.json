@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:29:30.543Z",
+  "generatedAt": "2026-10-25T20:52:36.951Z",
   "status": "ok",
   "districts": {
     "central-western": {
@@ -8,12 +8,177 @@
       "en": "Central and Western",
       "lat": 22.283,
       "lng": 114.155,
-      "avgPerPerson": 60,
-      "medianPerPerson": 58,
-      "priceSamples": 6,
-      "postCount": 6,
-      "updatedAt": "2026-10-25T20:27:04.341Z",
+      "avgPerPerson": 55,
+      "medianPerPerson": 57,
+      "priceSamples": 16,
+      "postCount": 16,
+      "updatedAt": "2026-10-25T20:50:03.426Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "中西區常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "中西區常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "牛肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "中西區常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咕嚕肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "咕嚕肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "中西區常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（凍/熱）（每份）",
+          "priceItem": "奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "中西區常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "中西區常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "中西區常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（細）（每份）",
+          "priceItem": "雲吞麵（細）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "中西區常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鹹魚雞粒炒飯（每份）",
+          "priceItem": "鹹魚雞粒炒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "中西區常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒飯（每份）",
+          "priceItem": "豬扒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "中西區常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "即煮沙嗲牛肉炒麵/河粉（每份）",
+          "priceItem": "即煮沙嗲牛肉炒麵/河粉",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "中西區常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -56,19 +221,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "翠園冰室",
-          "restaurant": "翠園冰室",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均（冰室/茶餐廳）",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "澳洲牛奶公司",
           "restaurant": "澳洲牛奶公司",
           "prices": [
@@ -100,12 +252,162 @@
       "en": "Wan Chai",
       "lat": 22.277,
       "lng": 114.173,
-      "avgPerPerson": 80,
-      "medianPerPerson": 73,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:27:12.506Z",
+      "avgPerPerson": 64,
+      "medianPerPerson": 58,
+      "priceSamples": 20,
+      "postCount": 20,
+      "updatedAt": "2026-10-25T20:50:12.439Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滷味雞兩餸飯（一餸兩味）（每份）",
+          "priceItem": "滷味雞兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "梅菜扣肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "梅菜扣肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            27
+          ],
+          "perPerson": 27,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            42
+          ],
+          "perPerson": 42,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶油豬扒包（每份）",
+          "priceItem": "奶油豬扒包",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            30
+          ],
+          "perPerson": 30,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "即煮麵（例：牛腩/雲吞麵）（每份）",
+          "priceItem": "即煮麵（例：牛腩/雲吞麵）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            54
+          ],
+          "perPerson": 54,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "碗仔翅（普通份量）（每份）",
+          "priceItem": "碗仔翅（普通份量）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雜菜/炒麵（普通份量）（每份）",
+          "priceItem": "雜菜/炒麵（普通份量）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -244,12 +546,192 @@
       "en": "Eastern",
       "lat": 22.279,
       "lng": 114.225,
-      "avgPerPerson": 67,
-      "medianPerPerson": 60,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:27:20.249Z",
+      "avgPerPerson": 57,
+      "medianPerPerson": 58,
+      "priceSamples": 21,
+      "postCount": 21,
+      "updatedAt": "2026-10-25T20:50:20.148Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "燒鵝兩餸飯（一餸兩味）（每份）",
+          "priceItem": "燒鵝兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "牛肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（凍或熱）（每份）",
+          "priceItem": "奶茶（凍或熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "檸檬茶（凍或熱）（每份）",
+          "priceItem": "檸檬茶（凍或熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒包（餐）（每份）",
+          "priceItem": "豬扒包（餐）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯/滑蛋叉燒飯（每份）",
+          "priceItem": "叉燒飯/滑蛋叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒飯/滑蛋豬扒飯（每份）",
+          "priceItem": "豬扒飯/滑蛋豬扒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "云吞麵（乾/湯）（每份）",
+          "priceItem": "云吞麵（乾/湯）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鹹魚雞粒炒飯（每份）",
+          "priceItem": "鹹魚雞粒炒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -344,19 +826,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "大家樂（港島東）",
-          "restaurant": "大家樂（港島東）",
-          "prices": [
-            60
-          ],
-          "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "翠華餐廳（港島東）",
           "restaurant": "翠華餐廳（港島東）",
           "prices": [
@@ -388,12 +857,192 @@
       "en": "Southern",
       "lat": 22.245,
       "lng": 114.185,
-      "avgPerPerson": 68,
-      "medianPerPerson": 70,
-      "priceSamples": 11,
-      "postCount": 11,
-      "updatedAt": "2026-10-25T20:27:26.114Z",
+      "avgPerPerson": 60,
+      "medianPerPerson": 65,
+      "priceSamples": 22,
+      "postCount": 22,
+      "updatedAt": "2026-10-25T20:50:27.698Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒/鹹魚雞粒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒/鹹魚雞粒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛腩/豬紅兩餸飯（一餸兩味）（每份）",
+          "priceItem": "牛腩/豬紅兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式凍奶茶（每份）",
+          "priceItem": "港式凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（熱/凍）+餐包（或法包）（每份）",
+          "priceItem": "奶茶（熱/凍）+餐包（或法包）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            33
+          ],
+          "perPerson": 33,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒飯（每份）",
+          "priceItem": "豬扒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            56
+          ],
+          "perPerson": 56,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（細）（每份）",
+          "priceItem": "雲吞麵（細）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "沙嗲牛肉炒麵/河粉（每份）",
+          "priceItem": "沙嗲牛肉炒麵/河粉",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱牛腩飯（每份）",
+          "priceItem": "咖喱牛腩飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -501,19 +1150,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "譚仔三哥米線",
-          "restaurant": "譚仔三哥米線",
-          "prices": [
-            60
-          ],
-          "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "麥當勞（南區店）",
           "restaurant": "麥當勞（南區店）",
           "prices": [
@@ -545,12 +1181,192 @@
       "en": "Yau Tsim Mong",
       "lat": 22.31,
       "lng": 114.17,
-      "avgPerPerson": 64,
-      "medianPerPerson": 65,
-      "priceSamples": 14,
-      "postCount": 14,
-      "updatedAt": "2026-10-25T20:27:33.559Z",
+      "avgPerPerson": 56,
+      "medianPerPerson": 58,
+      "priceSamples": 23,
+      "postCount": 23,
+      "updatedAt": "2026-10-25T20:50:36.768Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "牛肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "魷魚兩餸飯（一餸兩味）（每份）",
+          "priceItem": "魷魚兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            56
+          ],
+          "perPerson": 56,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（每份）",
+          "priceItem": "港式奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "餐湯麵（例：雲吞麵/牛腩麵）（每份）",
+          "priceItem": "餐湯麵（例：雲吞麵/牛腩麵）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "魯肉飯/滷味飯（每份）",
+          "priceItem": "魯肉飯/滷味飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "飯團/簡餐（例：日式燒肉飯團套）（每份）",
+          "priceItem": "飯團/簡餐（例：日式燒肉飯團套）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -619,19 +1435,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "澳門茶餐廳",
-          "restaurant": "澳門茶餐廳",
-          "prices": [
-            75
-          ],
-          "perPerson": 75,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "人人樂快餐",
           "restaurant": "人人樂快餐",
           "prices": [
@@ -651,19 +1454,6 @@
             60
           ],
           "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大家食堂",
-          "restaurant": "大家食堂",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
           "excerpt": "估計人均",
           "category": "兩餸飯",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
@@ -719,19 +1509,6 @@
           "excerpt": "估計人均",
           "category": "其他",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "西苑快餐",
-          "restaurant": "西苑快餐",
-          "prices": [
-            60
-          ],
-          "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
         }
       ]
     },
@@ -741,30 +1518,197 @@
       "en": "Sham Shui Po",
       "lat": 22.33,
       "lng": 114.16,
-      "avgPerPerson": 76,
-      "medianPerPerson": 78,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:27:41.496Z",
+      "avgPerPerson": 53,
+      "medianPerPerson": 55,
+      "priceSamples": 17,
+      "postCount": 17,
+      "updatedAt": "2026-10-25T20:50:44.932Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉椒蒸魚/煎魚兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豉椒蒸魚/煎魚兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "梅菜扣肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "梅菜扣肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱雞/牛兩餸飯（一餸兩味）（每份）",
+          "priceItem": "咖喱雞/牛兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "熱奶茶（每份）",
+          "priceItem": "熱奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶油雞蛋牛角包/蛋治（每份）",
+          "priceItem": "港式奶油雞蛋牛角包/蛋治",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯/燒味飯（單點）（每份）",
+          "priceItem": "叉燒飯/燒味飯（單點）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒包（餐/單點）（每份）",
+          "priceItem": "豬扒包（餐/單點）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            35
+          ],
+          "perPerson": 35,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式凈雲吞/牛腩麵（單碗）（每份）",
+          "priceItem": "港式凈雲吞/牛腩麵（單碗）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "飯/麵加一份小菜（例如滷味/涼拌）（每份）",
+          "priceItem": "飯/麵加一份小菜（例如滷味/涼拌）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
           "title": "鴨脷洲街兩餸飯",
           "restaurant": "鴨脷洲街兩餸飯",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大利兩餸飯",
-          "restaurant": "大利兩餸飯",
           "prices": [
             65
           ],
@@ -782,19 +1726,6 @@
             70
           ],
           "perPerson": 70,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "必勝客兩餸飯",
-          "restaurant": "必勝客兩餸飯",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
           "excerpt": "估計人均",
           "category": "兩餸飯",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
@@ -828,45 +1759,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "添發茶餐廳",
-          "restaurant": "添發茶餐廳",
-          "prices": [
-            85
-          ],
-          "perPerson": 85,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "龍城冰室",
-          "restaurant": "龍城冰室",
-          "prices": [
-            85
-          ],
-          "perPerson": 85,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "太子茶餐廳",
-          "restaurant": "太子茶餐廳",
-          "prices": [
-            85
-          ],
-          "perPerson": 85,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "快樂小食",
           "restaurant": "快樂小食",
           "prices": [
@@ -885,12 +1777,192 @@
       "en": "Kowloon City",
       "lat": 22.328,
       "lng": 114.19,
-      "avgPerPerson": 66,
-      "medianPerPerson": 65,
-      "priceSamples": 9,
-      "postCount": 9,
-      "updatedAt": "2026-10-25T20:27:47.584Z",
+      "avgPerPerson": 56,
+      "medianPerPerson": 55,
+      "priceSamples": 20,
+      "postCount": 20,
+      "updatedAt": "2026-10-25T20:50:54.378Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鹹魚雞粒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "鹹魚雞粒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "魯肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "魯肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豬扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱雞兩餸飯（一餸兩味）（每份）",
+          "priceItem": "咖喱雞兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（凍/熱）（每份）",
+          "priceItem": "港式奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            36
+          ],
+          "perPerson": 36,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "火腿通粉（每份）",
+          "priceItem": "火腿通粉",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛雜粉麵（腩/牛腩）（每份）",
+          "priceItem": "牛雜粉麵（腩/牛腩）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（細）（每份）",
+          "priceItem": "雲吞麵（細）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -959,19 +2031,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "大家樂（何文田）",
-          "restaurant": "大家樂（何文田）",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "新記車仔麵",
           "restaurant": "新記車仔麵",
           "prices": [
@@ -1016,12 +2075,177 @@
       "en": "Wong Tai Sin",
       "lat": 22.34,
       "lng": 114.195,
-      "avgPerPerson": 64,
-      "medianPerPerson": 65,
-      "priceSamples": 7,
-      "postCount": 7,
-      "updatedAt": "2026-10-25T20:27:53.400Z",
+      "avgPerPerson": 52,
+      "medianPerPerson": 53,
+      "priceSamples": 18,
+      "postCount": 18,
+      "updatedAt": "2026-10-25T20:51:03.411Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（兩餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（兩餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（兩餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（兩餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "煎蛋/鹹魚雞丁兩餸飯（兩餸兩味）（每份）",
+          "priceItem": "煎蛋/鹹魚雞丁兩餸飯（兩餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（凍/熱）（每份）",
+          "priceItem": "港式奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "檸檬茶（凍/熱）（每份）",
+          "priceItem": "檸檬茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            43
+          ],
+          "perPerson": 43,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉油皇炒麵（每份）",
+          "priceItem": "豉油皇炒麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵/雞蛋麵（細）（每份）",
+          "priceItem": "雲吞麵/雞蛋麵（細）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            35
+          ],
+          "perPerson": 35,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "飯團/叉燒包/小食拼（任選兩款）（每份）",
+          "priceItem": "飯團/叉燒包/小食拼（任選兩款）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            32
+          ],
+          "perPerson": 32,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -1121,12 +2345,192 @@
       "en": "Kwun Tong",
       "lat": 22.313,
       "lng": 114.225,
-      "avgPerPerson": 66,
-      "medianPerPerson": 65,
-      "priceSamples": 12,
-      "postCount": 12,
-      "updatedAt": "2026-10-25T20:28:00.246Z",
+      "avgPerPerson": 57,
+      "medianPerPerson": 60,
+      "priceSamples": 23,
+      "postCount": 23,
+      "updatedAt": "2026-10-25T20:51:11.845Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉油雞兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豉油雞兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "排骨兩餸飯（一餸兩味）（每份）",
+          "priceItem": "排骨兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "生炒骨/豬扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "生炒骨/豬扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（每份）",
+          "priceItem": "港式奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            23
+          ],
+          "perPerson": 23,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            44
+          ],
+          "perPerson": 44,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "絲襪奶茶（凍/熱）（每份）",
+          "priceItem": "絲襪奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "例湯麵（例如雲吞/牛腩/豬骨）+ 凍飲（每位）",
+          "priceItem": "例湯麵（例如雲吞/牛腩/豬骨）+ 凍飲",
+          "restaurant": "",
+          "priceBasis": "每位",
+          "prices": [
+            70
+          ],
+          "perPerson": 70,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滷味拼盤（常見1碗/1份飯）（每份）",
+          "priceItem": "滷味拼盤（常見1碗/1份飯）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬骨湯粉麵（普通碗）（每份）",
+          "priceItem": "豬骨湯粉麵（普通碗）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -1234,19 +2638,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "源記（觀塘兩餸飯）",
-          "restaurant": "源記（觀塘兩餸飯）",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "陳記燒味（觀塘）",
           "restaurant": "陳記燒味（觀塘）",
           "prices": [
@@ -1291,12 +2682,147 @@
       "en": "Kwai Tsing",
       "lat": 22.356,
       "lng": 114.129,
-      "avgPerPerson": 75,
-      "medianPerPerson": 75,
-      "priceSamples": 15,
-      "postCount": 15,
-      "updatedAt": "2026-10-25T20:28:08.312Z",
+      "avgPerPerson": 63,
+      "medianPerPerson": 60,
+      "priceSamples": 21,
+      "postCount": 21,
+      "updatedAt": "2026-10-25T20:51:18.832Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉油雞兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豉油雞兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（凍/熱）（每份）",
+          "priceItem": "奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            44
+          ],
+          "perPerson": 44,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒包（每份）",
+          "priceItem": "豬扒包",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（一般份量）（每份）",
+          "priceItem": "雲吞麵（一般份量）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛腩麵/河粉（一般份量）（每份）",
+          "priceItem": "牛腩麵/河粉（一般份量）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -1360,32 +2886,6 @@
           "perPerson": 65,
           "excerpt": "估計人均",
           "category": "餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大家樂（葵涌）",
-          "restaurant": "大家樂（葵涌）",
-          "prices": [
-            70
-          ],
-          "perPerson": 70,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "翠華餐廳（葵涌）",
-          "restaurant": "翠華餐廳（葵涌）",
-          "prices": [
-            85
-          ],
-          "perPerson": 85,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
         },
         {
@@ -1456,19 +2956,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "龍城冰室（葵芳）",
-          "restaurant": "龍城冰室（葵芳）",
-          "prices": [
-            85
-          ],
-          "perPerson": 85,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "聯記燒腊（葵涌）",
           "restaurant": "聯記燒腊（葵涌）",
           "prices": [
@@ -1500,12 +2987,177 @@
       "en": "Tsuen Wan",
       "lat": 22.37,
       "lng": 114.11,
-      "avgPerPerson": 69,
-      "medianPerPerson": 68,
-      "priceSamples": 15,
-      "postCount": 15,
-      "updatedAt": "2026-10-25T20:28:19.452Z",
+      "avgPerPerson": 57,
+      "medianPerPerson": 60,
+      "priceSamples": 25,
+      "postCount": 25,
+      "updatedAt": "2026-10-25T20:51:27.505Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滷水雞/燒味兩餸飯（一餸兩味）（每份）",
+          "priceItem": "滷水雞/燒味兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "鯪魚球/肉類兩餸飯（一餸兩味）（每份）",
+          "priceItem": "鯪魚球/肉類兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豆腐/青菜類兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豆腐/青菜類兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "熱奶茶（每份）",
+          "priceItem": "熱奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            20
+          ],
+          "perPerson": 20,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式凍檸茶（有冰）（每份）",
+          "priceItem": "港式凍檸茶（有冰）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵/撈麵（細碗）（每份）",
+          "priceItem": "雲吞麵/撈麵（細碗）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            32
+          ],
+          "perPerson": 32,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "公仔麵連配菜（加蛋/腸）（每份）",
+          "priceItem": "公仔麵連配菜（加蛋/腸）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            35
+          ],
+          "perPerson": 35,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -1595,19 +3247,6 @@
           "perPerson": 60,
           "excerpt": "估計人均",
           "category": "餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "金記腸粉王（荃灣）",
-          "restaurant": "金記腸粉王（荃灣）",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "其他",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
         },
         {
@@ -1709,30 +3348,182 @@
       "en": "Tuen Mun",
       "lat": 22.391,
       "lng": 113.977,
-      "avgPerPerson": 57,
+      "avgPerPerson": 48,
       "medianPerPerson": 55,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:28:43.844Z",
+      "priceSamples": 19,
+      "postCount": 19,
+      "updatedAt": "2026-10-25T20:51:36.569Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒／滷味兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒／滷味兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "屯門常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒／咕嚕肉兩餸飯（兩餸）（每份）",
+          "priceItem": "雞扒／咕嚕肉兩餸飯（兩餸）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "屯門常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "燒肉／照燒兩餸飯（兩餸）（每份）",
+          "priceItem": "燒肉／照燒兩餸飯（兩餸）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "屯門常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "屯門常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "熱奶茶（每份）",
+          "priceItem": "熱奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            20
+          ],
+          "perPerson": 20,
+          "excerpt": "屯門常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "屯門常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（配例湯/例菜）（每份）",
+          "priceItem": "叉燒飯（配例湯/例菜）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "套餐常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶餐（奶茶+西多士/三文治）（每位）",
+          "priceItem": "港式奶茶餐（奶茶+西多士/三文治）",
+          "restaurant": "",
+          "priceBasis": "每位",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "蒸/腸粉（連醬油/豉油）（每份）",
+          "priceItem": "蒸/腸粉（連醬油/豉油）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "腸仔包/咖喱魚蛋小食（每份）",
+          "priceItem": "腸仔包/咖喱魚蛋小食",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            20
+          ],
+          "perPerson": 20,
+          "excerpt": "屯門常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
           "title": "大快活",
           "restaurant": "大快活",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大家樂",
-          "restaurant": "大家樂",
           "prices": [
             55
           ],
@@ -1831,19 +3622,6 @@
           "excerpt": "估計人均（兩餸飯）",
           "category": "兩餸飯",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "祥興兩餸飯",
-          "restaurant": "祥興兩餸飯",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均（兩餸飯）",
-          "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
         }
       ]
     },
@@ -1853,12 +3631,192 @@
       "en": "Yuen Long",
       "lat": 22.445,
       "lng": 114.022,
-      "avgPerPerson": 65,
-      "medianPerPerson": 65,
-      "priceSamples": 11,
-      "postCount": 11,
-      "updatedAt": "2026-10-25T20:28:57.276Z",
+      "avgPerPerson": 57,
+      "medianPerPerson": 58,
+      "priceSamples": 19,
+      "postCount": 19,
+      "updatedAt": "2026-10-25T20:51:46.697Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "梅菜扣肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "梅菜扣肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "三色雞絲/鹹魚雞粒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "三色雞絲/鹹魚雞粒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            56
+          ],
+          "perPerson": 56,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（凍/熱，標準）（每份）",
+          "priceItem": "奶茶（凍/熱，標準）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶配餐（例如：菠蘿油/蛋撻+飲品）（每位）",
+          "priceItem": "港式奶茶配餐（例如：菠蘿油/蛋撻+飲品）",
+          "restaurant": "",
+          "priceBasis": "每位",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（單點）（每份）",
+          "priceItem": "叉燒飯（單點）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            50
+          ],
+          "perPerson": 50,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（每份）",
+          "priceItem": "雲吞麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            42
+          ],
+          "perPerson": 42,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豬扒飯（單點）（每份）",
+          "priceItem": "豬扒飯（單點）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛腩麵/米粉（每份）",
+          "priceItem": "牛腩麵/米粉",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "燒味拼飯（叉燒/燒鵝/燒肉）（每份）",
+          "priceItem": "燒味拼飯（叉燒/燒鵝/燒肉）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            68
+          ],
+          "perPerson": 68,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -1896,19 +3854,6 @@
           "perPerson": 60,
           "excerpt": "估計人均",
           "category": "餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "西貢美食（元朗）",
-          "restaurant": "西貢美食（元朗）",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "兩餸飯",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
         },
         {
@@ -1953,45 +3898,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "大家發茶餐廳（元朗）",
-          "restaurant": "大家發茶餐廳（元朗）",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "龍華冰室（元朗）",
-          "restaurant": "龍華冰室（元朗）",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "金記燒臘（元朗）",
-          "restaurant": "金記燒臘（元朗）",
-          "prices": [
-            70
-          ],
-          "perPerson": 70,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "澳洲牛奶公司（元朗）",
           "restaurant": "澳洲牛奶公司（元朗）",
           "prices": [
@@ -2010,12 +3916,177 @@
       "en": "North",
       "lat": 22.495,
       "lng": 114.138,
-      "avgPerPerson": 68,
-      "medianPerPerson": 68,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:29:04.574Z",
+      "avgPerPerson": 55,
+      "medianPerPerson": 55,
+      "priceSamples": 18,
+      "postCount": 18,
+      "updatedAt": "2026-10-25T20:51:55.009Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "梅菜扣肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "梅菜扣肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            23
+          ],
+          "perPerson": 23,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（熱/凍）（每份）",
+          "priceItem": "港式奶茶（熱/凍）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            32
+          ],
+          "perPerson": 32,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（配例湯/餐湯）（每份）",
+          "priceItem": "叉燒飯（配例湯/餐湯）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "午市套餐（例：飲品+餐/麵）（每份）",
+          "priceItem": "午市套餐（例：飲品+餐/麵）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "滑蛋牛肉飯（每份）",
+          "priceItem": "滑蛋牛肉飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（每份）",
+          "priceItem": "雲吞麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "大排飯（每份）",
+          "priceItem": "大排飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -2071,32 +4142,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "許留山（上水）",
-          "restaurant": "許留山（上水）",
-          "prices": [
-            60
-          ],
-          "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大家樂（粉嶺）",
-          "restaurant": "大家樂（粉嶺）",
-          "prices": [
-            75
-          ],
-          "perPerson": 75,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "龍城麵家（粉嶺）",
           "restaurant": "龍城麵家（粉嶺）",
           "prices": [
@@ -2123,19 +4168,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "豐茂燒味（上水）",
-          "restaurant": "豐茂燒味（上水）",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "通宵廚房（上水/粉嶺一帶）",
           "restaurant": "通宵廚房（上水/粉嶺一帶）",
           "prices": [
@@ -2154,12 +4186,192 @@
       "en": "Tai Po",
       "lat": 22.45,
       "lng": 114.164,
-      "avgPerPerson": 79,
-      "medianPerPerson": 73,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:29:10.271Z",
+      "avgPerPerson": 61,
+      "medianPerPerson": 55,
+      "priceSamples": 22,
+      "postCount": 22,
+      "updatedAt": "2026-10-25T20:52:07.405Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒/燒味兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒/燒味兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒/豬扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒/豬扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "梅菜扣肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "梅菜扣肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "魯肉/滷味兩餸飯（一餸兩味）（每份）",
+          "priceItem": "魯肉/滷味兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "絲襪奶茶（每份）",
+          "priceItem": "絲襪奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            26
+          ],
+          "perPerson": 26,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            42
+          ],
+          "perPerson": 42,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "火腿蛋三文治（每份）",
+          "priceItem": "火腿蛋三文治",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "午餐肉炒蛋飯（或同類簡單餐）（每份）",
+          "priceItem": "午餐肉炒蛋飯（或同類簡單餐）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            52
+          ],
+          "perPerson": 52,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（每份）",
+          "priceItem": "雲吞麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱牛腩飯（每份）",
+          "priceItem": "咖喱牛腩飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -2298,43 +4510,197 @@
       "en": "Sha Tin",
       "lat": 22.387,
       "lng": 114.195,
-      "avgPerPerson": 66,
+      "avgPerPerson": 55,
       "medianPerPerson": 58,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:29:17.298Z",
+      "priceSamples": 19,
+      "postCount": 19,
+      "updatedAt": "2026-10-25T20:52:18.873Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "叉燒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "生炒牛肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "生炒牛肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱牛腩兩餸飯（一餸兩味）（每份）",
+          "priceItem": "咖喱牛腩兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "奶茶（熱）（每份）",
+          "priceItem": "奶茶（熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式凍檸茶（每份）",
+          "priceItem": "港式凍檸茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            24
+          ],
+          "perPerson": 24,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "常餐（例：餐肉蛋+奶茶/咖啡）（每位）",
+          "priceItem": "常餐（例：餐肉蛋+奶茶/咖啡）",
+          "restaurant": "",
+          "priceBasis": "每位",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "碗仔翅（例：普通大小）（每份）",
+          "priceItem": "碗仔翅（例：普通大小）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵/撈麵（每份）",
+          "priceItem": "雲吞麵/撈麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
           "title": "大快活",
           "restaurant": "大快活",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大快活（沙田）",
-          "restaurant": "大快活（沙田）",
-          "prices": [
-            55
-          ],
-          "perPerson": 55,
-          "excerpt": "估計人均",
-          "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "大家樂",
-          "restaurant": "大家樂",
           "prices": [
             55
           ],
@@ -2361,19 +4727,6 @@
           "source": "AI 知識（未核實）",
           "title": "譚仔雲南米線",
           "restaurant": "譚仔雲南米線",
-          "prices": [
-            50
-          ],
-          "perPerson": 50,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "譚仔三哥米線",
-          "restaurant": "譚仔三哥米線",
           "prices": [
             50
           ],
@@ -2442,12 +4795,192 @@
       "en": "Sai Kung",
       "lat": 22.38,
       "lng": 114.27,
-      "avgPerPerson": 71,
-      "medianPerPerson": 70,
-      "priceSamples": 10,
-      "postCount": 10,
-      "updatedAt": "2026-10-25T20:29:24.484Z",
+      "avgPerPerson": 57,
+      "medianPerPerson": 60,
+      "priceSamples": 20,
+      "postCount": 20,
+      "updatedAt": "2026-10-25T20:52:28.196Z",
       "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "燒味兩餸飯（一餸兩味）（每份）",
+          "priceItem": "燒味兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            60
+          ],
+          "perPerson": 60,
+          "excerpt": "西貢常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雞扒兩餸飯（一餸兩味）（每份）",
+          "priceItem": "雞扒兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "西貢常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉椒排骨兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豉椒排骨兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "西貢常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "咖喱牛腩兩餸飯（一餸兩味）（每份）",
+          "priceItem": "咖喱牛腩兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "西貢常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "凍奶茶（每份）",
+          "priceItem": "凍奶茶",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            25
+          ],
+          "perPerson": 25,
+          "excerpt": "茶餐廳常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（熱/常溫）（每份）",
+          "priceItem": "港式奶茶（熱/常溫）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            23
+          ],
+          "perPerson": 23,
+          "excerpt": "茶餐廳常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "茶餐廳常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "茶餐廳常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "流心蛋牛肉麵（簡餐）（每份）",
+          "priceItem": "流心蛋牛肉麵（簡餐）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "西貢常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（每份）",
+          "priceItem": "雲吞麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            45
+          ],
+          "perPerson": 45,
+          "excerpt": "常見麵食價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "車仔麵（配基本料）（每份）",
+          "priceItem": "車仔麵（配基本料）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            40
+          ],
+          "perPerson": 40,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "炒飯（家常份量）（每份）",
+          "priceItem": "炒飯（家常份量）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "家常炒飯常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
         {
           "url": "",
           "source": "AI 知識（未核實）",
@@ -2503,19 +5036,6 @@
         {
           "url": "",
           "source": "AI 知識（未核實）",
-          "title": "越南粉·小食（西貢）",
-          "restaurant": "越南粉·小食（西貢）",
-          "prices": [
-            65
-          ],
-          "perPerson": 65,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
           "title": "新寶味燒味（西貢）",
           "restaurant": "新寶味燒味（西貢）",
           "prices": [
@@ -2564,19 +5084,6 @@
           "excerpt": "估計人均",
           "category": "餐廳",
           "fetchedAt": "2026-10-25T20:26:57.699Z"
-        },
-        {
-          "url": "",
-          "source": "AI 知識（未核實）",
-          "title": "福記粉麵（西貢）",
-          "restaurant": "福記粉麵（西貢）",
-          "prices": [
-            60
-          ],
-          "perPerson": 60,
-          "excerpt": "估計人均",
-          "category": "其他",
-          "fetchedAt": "2026-10-25T20:26:57.699Z"
         }
       ]
     },
@@ -2586,12 +5093,193 @@
       "en": "Islands",
       "lat": 22.26,
       "lng": 113.945,
-      "avgPerPerson": null,
-      "medianPerPerson": null,
-      "priceSamples": 0,
-      "postCount": 0,
-      "updatedAt": null,
-      "posts": []
+      "avgPerPerson": 46,
+      "medianPerPerson": 52,
+      "priceSamples": 12,
+      "postCount": 12,
+      "updatedAt": "2026-10-25T20:52:36.951Z",
+      "posts": [
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "豉油雞兩餸飯（一餸兩味）（每份）",
+          "priceItem": "豉油雞兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            62
+          ],
+          "perPerson": 62,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "燒肉兩餸飯（一餸兩味）（每份）",
+          "priceItem": "燒肉兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛腩/咖喱牛兩餸飯（一餸兩味）（每份）",
+          "priceItem": "牛腩/咖喱牛兩餸飯（一餸兩味）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            68
+          ],
+          "perPerson": 68,
+          "excerpt": "常見價錢估計",
+          "category": "兩餸飯",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "港式奶茶（凍/熱）（每份）",
+          "priceItem": "港式奶茶（凍/熱）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            26
+          ],
+          "perPerson": 26,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "西多士（每份）",
+          "priceItem": "西多士",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            38
+          ],
+          "perPerson": 38,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "菠蘿油（連奶茶）（每份）",
+          "priceItem": "菠蘿油（連奶茶）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            28
+          ],
+          "perPerson": 28,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "叉燒飯（每份）",
+          "priceItem": "叉燒飯",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            58
+          ],
+          "perPerson": 58,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "蛋治（火腿蛋/牛油蛋治）（每份）",
+          "priceItem": "蛋治（火腿蛋/牛油蛋治）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "一個快餐（餐肉/燒味/雞翼飯+例湯或飲品）（每位）",
+          "priceItem": "一個快餐（餐肉/燒味/雞翼飯+例湯或飲品）",
+          "restaurant": "",
+          "priceBasis": "每位",
+          "prices": [
+            65
+          ],
+          "perPerson": 65,
+          "excerpt": "常見價錢估計",
+          "category": "茶餐廳",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "雲吞麵（每份）",
+          "priceItem": "雲吞麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            48
+          ],
+          "perPerson": 48,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "牛腩麵（每份）",
+          "priceItem": "牛腩麵",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            55
+          ],
+          "perPerson": 55,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        },
+        {
+          "url": "",
+          "source": "AI 知識（未核實）",
+          "title": "生果奶/豆漿（約中杯）（每份）",
+          "priceItem": "生果奶/豆漿（約中杯）",
+          "restaurant": "",
+          "priceBasis": "每份",
+          "prices": [
+            22
+          ],
+          "perPerson": 22,
+          "excerpt": "常見價錢估計",
+          "category": "其他",
+          "fetchedAt": "2026-10-25T20:49:55.227Z"
+        }
+      ]
     }
   }
 }

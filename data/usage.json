@@ -1,6 +1,6 @@
 {
   "month": "2026-10",
-  "used": 72,
+  "used": 90,
   "limit": 5000,
   "reserve": 500,
   "runs": [
@@ -26,6 +26,12 @@
       "startedAt": "2026-10-25T20:26:57.696Z",
       "credits": 18,
       "districts": 17,
+      "note": "pollinations"
+    },
+    {
+      "startedAt": "2026-10-25T20:49:55.223Z",
+      "credits": 18,
+      "districts": 18,
       "note": "pollinations"
     }
   ]
