@@ -27,6 +27,7 @@ jobs:
       - name: Run crawler (Pollinations is the only data source)
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+          POLLINATIONS_MODEL: ${{ vars.POLLINATIONS_MODEL }}
         run: node scripts/run-crawl.mjs
 
       - name: Commit data if changed
