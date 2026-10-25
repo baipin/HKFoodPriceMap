@@ -20,7 +20,7 @@
 
 A map of Hong Kong's 18 districts showing average food prices per person. The site is static (Material Design, white / dark themes, English / 繁體 / 简体) and deployed on Vercel.
 
-**Pollinations is the only data source, and the model is GPT-5.4 Nano (`openai/gpt-5.4-nano`).** Once a week, a GitHub Actions job makes one request per district through `POST https://gen.pollinations.ai/v1/chat/completions`. The model answers from its own knowledge (it does not search the web): restaurants in that district, a typical per-person price in HKD, and a source link only when it knows a real one. The result is validated, then merged into `data/districts.json`. The model can be changed with the GitHub variable `POLLINATIONS_MODEL`.
+**Pollinations is the only data source, and the model is GPT-5.4 Nano (`openai/gpt-5.4-nano`).** On the 1st and 15th of each month, a GitHub Actions job makes one request per district through `POST https://gen.pollinations.ai/v1/chat/completions`. The model answers from its own knowledge (it does not search the web): restaurants in that district, a typical per-person price in HKD, and a source link only when it knows a real one. The result is validated, then merged into `data/districts.json`. The model can be changed with the GitHub variable `POLLINATIONS_MODEL`.
 
 ### Validation
 
@@ -41,7 +41,7 @@ The model's answer is not trusted:
 - `lib/extract.mjs`: price and restaurant helpers, source labels, statistics
 - `lib/quota.mjs`: request guard; `lib/store.mjs`: data files
 - `scripts/run-crawl.mjs`: driver run by GitHub Actions
-- `.github/workflows/crawl.yml`: runs every Monday (02:00 UTC)
+- `.github/workflows/crawl.yml`: runs on the 1st and 15th of each month (02:00 UTC)
 - `tests/`: unit tests (`npm test`)
 
 ### Deployment
@@ -52,7 +52,7 @@ The model's answer is not trusted:
 
 ### Requests and limits
 
-- One Pollinations request per district, so 18 per run, or about 78 per month with weekly runs.
+- One Pollinations request per district, so 18 per run, or about 36 per month with runs on the 1st and 15th.
 - `lib/quota.mjs` keeps a local count in `data/usage.json`. The real limits depend on your Pollinations plan; check your Pollinations dashboard.
 - If a run cannot be afforded under the local budget, it is skipped and the site keeps its last data.
 
@@ -76,7 +76,7 @@ python -m http.server 8000    # then open http://localhost:8000
 
 按香港18區顯示食物人均價格的地圖。網站為靜態頁面（Material Design，白色／黑夜主題，支援繁體、简体及 English），部署於 Vercel。
 
-**Pollinations 是唯一的數據來源，模型為 GPT-5.4 Nano（`openai/gpt-5.4-nano`）。** 每週一，GitHub Actions 會為每個地區通過 `POST https://gen.pollinations.ai/v1/chat/completions` 發出一次請求。模型根據自身知識回答（不會上網搜尋）：該地區的餐廳、典型人均價格（HKD），只有在確知真實來源時才附上網址。結果經過驗證後，合併到 `data/districts.json`。模型可透過 GitHub 變數 `POLLINATIONS_MODEL` 更改。
+**Pollinations 是唯一的數據來源，模型為 GPT-5.4 Nano（`openai/gpt-5.4-nano`）。** 每月 1 日和 15 日，GitHub Actions 會為每個地區通過 `POST https://gen.pollinations.ai/v1/chat/completions` 發出一次請求。模型根據自身知識回答（不會上網搜尋）：該地區的餐廳、典型人均價格（HKD），只有在確知真實來源時才附上網址。結果經過驗證後，合併到 `data/districts.json`。模型可透過 GitHub 變數 `POLLINATIONS_MODEL` 更改。
 
 ### 驗證
 
@@ -97,7 +97,7 @@ python -m http.server 8000    # then open http://localhost:8000
 - `lib/extract.mjs`：價格與餐廳名稱輔助、來源標籤、統計
 - `lib/quota.mjs`：請求控制；`lib/store.mjs`：數據檔案
 - `scripts/run-crawl.mjs`：由 GitHub Actions 執行的驅動程式
-- `.github/workflows/crawl.yml`：每週一運行（UTC 02:00）
+- `.github/workflows/crawl.yml`：每月 1 日和 15 日運行（UTC 02:00）
 - `tests/`：單元測試（`npm test`）
 
 ### 部署步驟
@@ -108,7 +108,7 @@ python -m http.server 8000    # then open http://localhost:8000
 
 ### 請求與限制
 
-- 每區每次運行一次 Pollinations 請求，即每次 18 次；按每週運行計算，每月約 78 次。
+- 每區每次運行一次 Pollinations 請求，即每次 18 次；按每月 1 日和 15 日運行計算，每月約 36 次。
 - `lib/quota.mjs` 在 `data/usage.json` 記錄本地計數。實際限額取決於你的 Pollinations 方案，請在 Pollinations 控制台查看。
 - 如果本地預算不足以完成一次完整運行，會跳過該次運行，網站保留上一次的數據。
 

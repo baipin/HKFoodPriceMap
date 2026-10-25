@@ -2,8 +2,8 @@ name: Crawl food prices
 
 on:
   schedule:
-    # Every Monday 02:00 UTC (10:00 HKT). ~4 runs/month.
-    - cron: "0 2 * * 1"
+    # 1st and 15th of each month, 02:00 UTC (10:00 HKT). ~2 runs/month.
+    - cron: "0 2 1,15 * *"
   workflow_dispatch:
 
 permissions:
