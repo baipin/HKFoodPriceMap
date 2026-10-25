@@ -154,6 +154,11 @@ h1, h2, h3, p { margin: 0; }
   cursor: pointer;
 }
 
+/* Theme icon: show the moon in light mode (tap for dark), the sun in dark mode (tap for light). */
+.icon-btn .icon-sun { display: none; }
+:root[data-theme="dark"] .icon-btn .icon-moon { display: none; }
+:root[data-theme="dark"] .icon-btn .icon-sun { display: block; }
+
 /* Segmented button (MD3): connected group, 40dp high */
 .segmented {
   display: inline-flex;
