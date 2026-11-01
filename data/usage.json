@@ -1,35 +1,11 @@
 {
-  "month": "2026-10",
-  "used": 90,
+  "month": "2026-11",
+  "used": 18,
   "limit": 5000,
   "reserve": 500,
   "runs": [
     {
-      "startedAt": "2026-10-25T20:02:56.187Z",
-      "credits": 18,
-      "districts": 0,
-      "note": "pollinations"
-    },
-    {
-      "startedAt": "2026-10-25T20:10:29.308Z",
-      "credits": 18,
-      "districts": 0,
-      "note": "pollinations"
-    },
-    {
-      "startedAt": "2026-10-25T20:13:50.052Z",
-      "credits": 18,
-      "districts": 0,
-      "note": "pollinations"
-    },
-    {
-      "startedAt": "2026-10-25T20:26:57.696Z",
-      "credits": 18,
-      "districts": 17,
-      "note": "pollinations"
-    },
-    {
-      "startedAt": "2026-10-25T20:49:55.223Z",
+      "startedAt": "2026-11-01T08:26:51.667Z",
       "credits": 18,
       "districts": 18,
       "note": "pollinations"

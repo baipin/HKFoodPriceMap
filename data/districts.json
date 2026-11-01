@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T20:52:36.951Z",
+  "generatedAt": "2026-11-01T08:27:01.150Z",
   "status": "ok",
   "districts": {
     "central-western": {
@@ -12,7 +12,7 @@
       "medianPerPerson": 57,
       "priceSamples": 16,
       "postCount": 16,
-      "updatedAt": "2026-10-25T20:50:03.426Z",
+      "updatedAt": "2026-11-01T08:26:52.721Z",
       "posts": [
         {
           "url": "",
@@ -27,7 +27,7 @@
           "perPerson": 60,
           "excerpt": "中西區常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -42,7 +42,7 @@
           "perPerson": 58,
           "excerpt": "中西區常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -57,7 +57,7 @@
           "perPerson": 62,
           "excerpt": "中西區常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -72,7 +72,7 @@
           "perPerson": 60,
           "excerpt": "中西區常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -87,7 +87,7 @@
           "perPerson": 25,
           "excerpt": "中西區常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -102,7 +102,7 @@
           "perPerson": 38,
           "excerpt": "中西區常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -117,7 +117,7 @@
           "perPerson": 55,
           "excerpt": "中西區常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -132,7 +132,7 @@
           "perPerson": 40,
           "excerpt": "中西區常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -147,7 +147,7 @@
           "perPerson": 55,
           "excerpt": "中西區常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -162,7 +162,7 @@
           "perPerson": 50,
           "excerpt": "中西區常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -177,7 +177,7 @@
           "perPerson": 70,
           "excerpt": "中西區常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -256,7 +256,7 @@
       "medianPerPerson": 58,
       "priceSamples": 20,
       "postCount": 20,
-      "updatedAt": "2026-10-25T20:50:12.439Z",
+      "updatedAt": "2026-11-01T08:26:53.145Z",
       "posts": [
         {
           "url": "",
@@ -271,7 +271,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -286,7 +286,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -301,7 +301,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -316,7 +316,7 @@
           "perPerson": 27,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -331,7 +331,7 @@
           "perPerson": 42,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -346,7 +346,7 @@
           "perPerson": 30,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -361,7 +361,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -376,7 +376,7 @@
           "perPerson": 54,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -391,7 +391,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -406,7 +406,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -550,7 +550,7 @@
       "medianPerPerson": 58,
       "priceSamples": 21,
       "postCount": 21,
-      "updatedAt": "2026-10-25T20:50:20.148Z",
+      "updatedAt": "2026-11-01T08:26:53.637Z",
       "posts": [
         {
           "url": "",
@@ -565,7 +565,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -580,7 +580,7 @@
           "perPerson": 70,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -595,7 +595,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -610,7 +610,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -625,7 +625,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -640,7 +640,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -655,7 +655,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -670,7 +670,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -685,7 +685,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -700,7 +700,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -715,7 +715,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -730,7 +730,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -861,7 +861,7 @@
       "medianPerPerson": 65,
       "priceSamples": 22,
       "postCount": 22,
-      "updatedAt": "2026-10-25T20:50:27.698Z",
+      "updatedAt": "2026-11-01T08:26:54.166Z",
       "posts": [
         {
           "url": "",
@@ -876,7 +876,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -891,7 +891,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -906,7 +906,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -921,7 +921,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -936,7 +936,7 @@
           "perPerson": 33,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -951,7 +951,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -966,7 +966,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -981,7 +981,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -996,7 +996,7 @@
           "perPerson": 56,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1011,7 +1011,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1026,7 +1026,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1041,7 +1041,7 @@
           "perPerson": 70,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1185,7 +1185,7 @@
       "medianPerPerson": 58,
       "priceSamples": 23,
       "postCount": 23,
-      "updatedAt": "2026-10-25T20:50:36.768Z",
+      "updatedAt": "2026-11-01T08:26:54.735Z",
       "posts": [
         {
           "url": "",
@@ -1200,7 +1200,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1215,7 +1215,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1230,7 +1230,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1245,7 +1245,7 @@
           "perPerson": 56,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1260,7 +1260,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1275,7 +1275,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1290,7 +1290,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1305,7 +1305,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1320,7 +1320,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1335,7 +1335,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1350,7 +1350,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1365,7 +1365,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1522,7 +1522,7 @@
       "medianPerPerson": 55,
       "priceSamples": 17,
       "postCount": 17,
-      "updatedAt": "2026-10-25T20:50:44.932Z",
+      "updatedAt": "2026-11-01T08:26:55.211Z",
       "posts": [
         {
           "url": "",
@@ -1537,7 +1537,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1552,7 +1552,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1567,7 +1567,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1582,7 +1582,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1597,7 +1597,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1612,7 +1612,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1627,7 +1627,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1642,7 +1642,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1657,7 +1657,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1672,7 +1672,7 @@
           "perPerson": 35,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1687,7 +1687,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1702,7 +1702,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1781,7 +1781,7 @@
       "medianPerPerson": 55,
       "priceSamples": 20,
       "postCount": 20,
-      "updatedAt": "2026-10-25T20:50:54.378Z",
+      "updatedAt": "2026-11-01T08:26:55.659Z",
       "posts": [
         {
           "url": "",
@@ -1796,7 +1796,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1811,7 +1811,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1826,7 +1826,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1841,7 +1841,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1856,7 +1856,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1871,7 +1871,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1886,7 +1886,7 @@
           "perPerson": 36,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1901,7 +1901,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1916,7 +1916,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1931,7 +1931,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1946,7 +1946,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -1961,7 +1961,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2079,7 +2079,7 @@
       "medianPerPerson": 53,
       "priceSamples": 18,
       "postCount": 18,
-      "updatedAt": "2026-10-25T20:51:03.411Z",
+      "updatedAt": "2026-11-01T08:26:56.193Z",
       "posts": [
         {
           "url": "",
@@ -2094,7 +2094,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2109,7 +2109,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2124,7 +2124,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2139,7 +2139,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2154,7 +2154,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2169,7 +2169,7 @@
           "perPerson": 43,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2184,7 +2184,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2199,7 +2199,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2214,7 +2214,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2229,7 +2229,7 @@
           "perPerson": 35,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2244,7 +2244,7 @@
           "perPerson": 32,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2349,7 +2349,7 @@
       "medianPerPerson": 60,
       "priceSamples": 23,
       "postCount": 23,
-      "updatedAt": "2026-10-25T20:51:11.845Z",
+      "updatedAt": "2026-11-01T08:26:57.085Z",
       "posts": [
         {
           "url": "",
@@ -2364,7 +2364,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2379,7 +2379,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2394,7 +2394,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2409,7 +2409,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2424,7 +2424,7 @@
           "perPerson": 23,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2439,7 +2439,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2454,7 +2454,7 @@
           "perPerson": 44,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2469,7 +2469,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2484,7 +2484,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2499,7 +2499,7 @@
           "perPerson": 70,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2514,7 +2514,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2529,7 +2529,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2686,7 +2686,7 @@
       "medianPerPerson": 60,
       "priceSamples": 21,
       "postCount": 21,
-      "updatedAt": "2026-10-25T20:51:18.832Z",
+      "updatedAt": "2026-11-01T08:26:57.572Z",
       "posts": [
         {
           "url": "",
@@ -2701,7 +2701,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2716,7 +2716,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2731,7 +2731,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2746,7 +2746,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2761,7 +2761,7 @@
           "perPerson": 44,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2776,7 +2776,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2791,7 +2791,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2806,7 +2806,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2821,7 +2821,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -2991,7 +2991,7 @@
       "medianPerPerson": 60,
       "priceSamples": 25,
       "postCount": 25,
-      "updatedAt": "2026-10-25T20:51:27.505Z",
+      "updatedAt": "2026-11-01T08:26:57.986Z",
       "posts": [
         {
           "url": "",
@@ -3006,7 +3006,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3021,7 +3021,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3036,7 +3036,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3051,7 +3051,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3066,7 +3066,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3081,7 +3081,7 @@
           "perPerson": 20,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3096,7 +3096,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3111,7 +3111,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3126,7 +3126,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3141,7 +3141,7 @@
           "perPerson": 32,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3156,7 +3156,7 @@
           "perPerson": 35,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3352,7 +3352,7 @@
       "medianPerPerson": 55,
       "priceSamples": 19,
       "postCount": 19,
-      "updatedAt": "2026-10-25T20:51:36.569Z",
+      "updatedAt": "2026-11-01T08:26:58.419Z",
       "posts": [
         {
           "url": "",
@@ -3367,7 +3367,7 @@
           "perPerson": 58,
           "excerpt": "屯門常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3382,7 +3382,7 @@
           "perPerson": 60,
           "excerpt": "屯門常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3397,7 +3397,7 @@
           "perPerson": 62,
           "excerpt": "屯門常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3412,7 +3412,7 @@
           "perPerson": 22,
           "excerpt": "屯門常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3427,7 +3427,7 @@
           "perPerson": 20,
           "excerpt": "屯門常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3442,7 +3442,7 @@
           "perPerson": 28,
           "excerpt": "屯門常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3457,7 +3457,7 @@
           "perPerson": 48,
           "excerpt": "套餐常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3472,7 +3472,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3487,7 +3487,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3502,7 +3502,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3517,7 +3517,7 @@
           "perPerson": 20,
           "excerpt": "屯門常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3635,7 +3635,7 @@
       "medianPerPerson": 58,
       "priceSamples": 19,
       "postCount": 19,
-      "updatedAt": "2026-10-25T20:51:46.697Z",
+      "updatedAt": "2026-11-01T08:26:58.933Z",
       "posts": [
         {
           "url": "",
@@ -3650,7 +3650,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3665,7 +3665,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3680,7 +3680,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3695,7 +3695,7 @@
           "perPerson": 56,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3710,7 +3710,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3725,7 +3725,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3740,7 +3740,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3755,7 +3755,7 @@
           "perPerson": 50,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3770,7 +3770,7 @@
           "perPerson": 42,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3785,7 +3785,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3800,7 +3800,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3815,7 +3815,7 @@
           "perPerson": 68,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3920,7 +3920,7 @@
       "medianPerPerson": 55,
       "priceSamples": 18,
       "postCount": 18,
-      "updatedAt": "2026-10-25T20:51:55.009Z",
+      "updatedAt": "2026-11-01T08:26:59.363Z",
       "posts": [
         {
           "url": "",
@@ -3935,7 +3935,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3950,7 +3950,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3965,7 +3965,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3980,7 +3980,7 @@
           "perPerson": 23,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -3995,7 +3995,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4010,7 +4010,7 @@
           "perPerson": 32,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4025,7 +4025,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4040,7 +4040,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4055,7 +4055,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4070,7 +4070,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4085,7 +4085,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4190,7 +4190,7 @@
       "medianPerPerson": 55,
       "priceSamples": 22,
       "postCount": 22,
-      "updatedAt": "2026-10-25T20:52:07.405Z",
+      "updatedAt": "2026-11-01T08:26:59.757Z",
       "posts": [
         {
           "url": "",
@@ -4205,7 +4205,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4220,7 +4220,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4235,7 +4235,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4250,7 +4250,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4265,7 +4265,7 @@
           "perPerson": 26,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4280,7 +4280,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4295,7 +4295,7 @@
           "perPerson": 42,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4310,7 +4310,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4325,7 +4325,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4340,7 +4340,7 @@
           "perPerson": 52,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4355,7 +4355,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4370,7 +4370,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4514,7 +4514,7 @@
       "medianPerPerson": 58,
       "priceSamples": 19,
       "postCount": 19,
-      "updatedAt": "2026-10-25T20:52:18.873Z",
+      "updatedAt": "2026-11-01T08:27:00.180Z",
       "posts": [
         {
           "url": "",
@@ -4529,7 +4529,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4544,7 +4544,7 @@
           "perPerson": 60,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4559,7 +4559,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4574,7 +4574,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4589,7 +4589,7 @@
           "perPerson": 25,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4604,7 +4604,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4619,7 +4619,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4634,7 +4634,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4649,7 +4649,7 @@
           "perPerson": 24,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4664,7 +4664,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4679,7 +4679,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4694,7 +4694,7 @@
           "perPerson": 45,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4799,7 +4799,7 @@
       "medianPerPerson": 60,
       "priceSamples": 20,
       "postCount": 20,
-      "updatedAt": "2026-10-25T20:52:28.196Z",
+      "updatedAt": "2026-11-01T08:27:00.643Z",
       "posts": [
         {
           "url": "",
@@ -4814,7 +4814,7 @@
           "perPerson": 60,
           "excerpt": "西貢常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4829,7 +4829,7 @@
           "perPerson": 62,
           "excerpt": "西貢常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4844,7 +4844,7 @@
           "perPerson": 58,
           "excerpt": "西貢常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4859,7 +4859,7 @@
           "perPerson": 65,
           "excerpt": "西貢常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4874,7 +4874,7 @@
           "perPerson": 25,
           "excerpt": "茶餐廳常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4889,7 +4889,7 @@
           "perPerson": 23,
           "excerpt": "茶餐廳常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4904,7 +4904,7 @@
           "perPerson": 38,
           "excerpt": "茶餐廳常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4919,7 +4919,7 @@
           "perPerson": 45,
           "excerpt": "茶餐廳常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4934,7 +4934,7 @@
           "perPerson": 55,
           "excerpt": "西貢常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4949,7 +4949,7 @@
           "perPerson": 45,
           "excerpt": "常見麵食價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4964,7 +4964,7 @@
           "perPerson": 40,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -4979,7 +4979,7 @@
           "perPerson": 48,
           "excerpt": "家常炒飯常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5097,7 +5097,7 @@
       "medianPerPerson": 52,
       "priceSamples": 12,
       "postCount": 12,
-      "updatedAt": "2026-10-25T20:52:36.951Z",
+      "updatedAt": "2026-11-01T08:27:01.150Z",
       "posts": [
         {
           "url": "",
@@ -5112,7 +5112,7 @@
           "perPerson": 62,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5127,7 +5127,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5142,7 +5142,7 @@
           "perPerson": 68,
           "excerpt": "常見價錢估計",
           "category": "兩餸飯",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5157,7 +5157,7 @@
           "perPerson": 26,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5172,7 +5172,7 @@
           "perPerson": 38,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5187,7 +5187,7 @@
           "perPerson": 28,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5202,7 +5202,7 @@
           "perPerson": 58,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5217,7 +5217,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5232,7 +5232,7 @@
           "perPerson": 65,
           "excerpt": "常見價錢估計",
           "category": "茶餐廳",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5247,7 +5247,7 @@
           "perPerson": 48,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5262,7 +5262,7 @@
           "perPerson": 55,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         },
         {
           "url": "",
@@ -5277,7 +5277,7 @@
           "perPerson": 22,
           "excerpt": "常見價錢估計",
           "category": "其他",
-          "fetchedAt": "2026-10-25T20:49:55.227Z"
+          "fetchedAt": "2026-11-01T08:26:51.672Z"
         }
       ]
     }
